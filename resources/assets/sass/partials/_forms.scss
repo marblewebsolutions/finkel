@@ -1,0 +1,14 @@
+.form-group {
+  input[type=email],
+  input[type=password],
+  input[type=text],
+  textarea {
+    margin-bottom: .5em;
+    padding: 8px;
+    width: 100%;
+  }
+
+  textarea {
+    resize: none;
+  }
+}

@@ -1,0 +1,65 @@
+.music-media {
+  .music {
+    text-align: center;
+  }
+
+  .nav {
+    padding: 2.5em 0 0;
+
+    + .block {
+      padding: 0 0 5rem;
+    }
+  }
+
+  .tune-links {
+    width: auto;
+
+    .box {
+      display: inline-block;
+
+      a,
+      iframe {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      iframe {
+        margin: 0 .5em;
+
+        &:hover {
+          cursor: url('/images/diamondcursor_lg.png'), auto;
+          opacity: .8;
+        }
+      }
+
+      img {
+        height: auto;
+        margin: 0 .5em;
+        width: 56px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $med) {
+    .nav {
+      padding: 1.5em 1em;
+
+      + .block {
+        padding: 5rem 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $sm) {
+    .album-cover {
+      display: block;
+      margin: auto;
+      max-width: 30em;
+      width: 100%;
+    }
+
+    .tune-links {
+      padding: 1em 0 0;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.modal-container {
+  background: $black-trans-60;
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+
+  &.active {
+    opacity: 1;
+    z-index: $modal-z;
+  }
+
+  .modal {
+    background: $white;
+    border: 2px solid $primary;
+    margin: auto;
+    min-width: 300px;
+    position: relative;
+    opacity: 1;
+    overflow: hidden;
+    width: 60%;
+
+    img {
+      display: inline-block;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      transition: all .3s ease;
+    }
+
+    .body {
+      background: $primary;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .close {
+      color: $text;
+      cursor: url('/images/diamondcursor_shine.png'), auto;
+      font-size: 2.75em;
+      position: absolute;
+      right: .5em;
+      top: 0;
+      transition: all .3s ease;
+
+      &:hover {
+        color: $primary;
+        @include transform(rotate(90deg));
+      }
+    }
+
+    .header {
+      box-sizing: border-box;
+      padding: .5em;
+      position: relative;
+    }
+
+    .next {
+      right: 1%;
+    }
+
+    .next, .prev {
+      color: $white;
+      display: inline-block;
+      font-size: 3em;
+      top: 50%;
+      position: absolute;
+      z-index: 1;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    .prev {
+      left: 1%;
+    }
+
+    .title {
+      color: $primary;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,222 @@
+.nav {
+  margin: 0 0 3.75em;
+
+  .mobile-toggle {
+    display: none;
+    left: 0;
+    padding: .75em;
+    position: absolute;
+    top: 0;
+
+    &:hover {
+      cursor: url('/images/diamondcursor_lg.png'), auto;
+    }
+
+    .line {
+      background: $text;
+      height: 3px;
+      margin: 5px 0;
+      @include transition();
+      width: 2.5em;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    vertical-align: baseline;
+
+    a {
+      color: $text-light;
+      font-weight: bold;
+      @include transition();
+    }
+
+    &:nth-child(even) {
+      margin: 0 3em;
+    }
+
+    &:hover,
+    &.active {
+      a {
+        color: $orange;
+      }
+    }
+  }
+
+  .nav-links {
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: $med) {
+    @include box-shadow();
+
+    align-items: center;
+    background: $white;
+    border: 3px solid $orange;
+    border-radius: 1.5em;
+    height: 4.5em;
+    left: 2em;
+    margin: 0;
+    overflow: hidden;
+    padding: .75em;
+    position: fixed;
+    top: 2em;
+    text-align: center;
+    @include transition();
+    width: 4.5em;
+    z-index: $nav-z;
+
+    &.active {
+      height: 21em;
+      padding: 1.5em 1em;
+      width: 9em;
+
+      .line {
+        width: 1.5em;
+
+        &.bottom {
+          transform: rotate(-45deg) translate(.95em, -0.9em);
+        }
+
+        &.middle {
+          opacity: 0;
+        }
+
+        &.top {
+          transform: rotate(45deg);
+        }
+      }
+
+      .nav-links {
+        display: block;
+        margin-top: .5em;
+        opacity: 1;
+        padding: 0;
+      }
+    }
+
+    .mobile-toggle {
+      display: block;
+    }
+
+    .nav-links {
+      margin-top: 5em;
+      opacity: 0;
+      @include transition(opacity);
+    }
+
+    .nav-link {
+      padding: .75em 0;
+
+      &:nth-child(even) {
+        margin: 0;
+      }
+
+      &:hover,
+      &.active {
+        color: $orange;
+
+        a {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.old-nav {
+  @include box-shadow();
+
+  align-items: center;
+  background: $white;
+  border: 3px solid $blue-light;
+  border-radius: 1.5em;
+  left: 8%;
+  overflow: hidden;
+  padding: 1.5em 1em;
+  position: fixed;
+  text-align: center;
+  top: 3em;
+  z-index: $nav-z;
+
+  .mobile-toggle {
+    display: none;
+    left: 0;
+    padding: .75em;
+    position: absolute;
+    top: 0;
+
+    &:hover {
+      cursor: url('/images/diamondcursor_lg.png'), auto;
+    }
+
+    .line {
+      background: $text;
+      height: 3px;
+      margin: 5px 0;
+      @include transition();
+      width: 2.5em;
+    }
+  }
+
+  .nav-link {
+    padding: .75em 0;
+
+    &:hover,
+    &.active {
+      color: $text-blue;
+
+      a {
+        color: $text-blue;
+      }
+    }
+  }
+
+  @media screen and (max-width: $med) {
+    height: 4.5em;
+    left: 2em;
+    padding: .75em;
+    position: fixed;
+    top: 2em;
+    @include transition();
+    width: 4.5em;
+
+    &.active {
+      height: 16.5em;
+      padding: 1.5em 1em;
+      width: 9em;
+
+      .line {
+        width: 1.5em;
+
+        &.bottom {
+          transform: rotate(-45deg) translate(.95em, -0.9em);
+        }
+
+        &.middle {
+          opacity: 0;
+        }
+
+        &.top {
+          transform: rotate(45deg);
+        }
+      }
+
+      .nav-links {
+        margin-top: .5em;
+        opacity: 1;
+      }
+    }
+
+    .mobile-toggle {
+      display: block;
+    }
+
+    .nav-links {
+      margin-top: 5em;
+      opacity: 0;
+      @include transition(opacity);
+    }
+  }
+}

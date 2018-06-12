@@ -1,0 +1,44 @@
+.footer {
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  p {
+    z-index: 1;
+  }
+
+  .mws-credit {
+    bottom: .75em;
+    left: 8.3%;
+    position: absolute;
+    text-align: left;
+
+    .blue,
+    .orange {
+      @include transition(color);
+    }
+
+    a {
+      &:hover {
+        .blue {
+          color: $mws-blue;
+        }
+
+        .orange {
+          color: $mws-orange;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $sm) {
+    padding-left: 8.3%;
+    text-align: left;
+
+    .mws-credit {
+      padding-top: .5em;
+      position: static;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.digs {
+  .nav {
+    padding: 2.5em 0 0;
+
+    + .block {
+      padding: 0 0 5rem;
+    }
+  }
+
+  @media screen and (max-width: $med) {
+    .nav {
+      padding: 1.5em 1em;
+
+      + .block {
+        padding: 5rem 0;
+      }
+    }
+  }
+}
