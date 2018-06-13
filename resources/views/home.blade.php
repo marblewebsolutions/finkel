@@ -32,23 +32,15 @@
         </div>
     </div>
 
-    <div class="block" id="gallery">
-        <div class="gallery">
-            <div class="row">
-                <div class="photo photo-left">
-                    <img class="border-red" src="{{asset('images/01F0EBB7-1D49-4E42-B3D6-89370282CDC9.jpg')}}" alt="J B 2">
-                </div><div class="photo photo-right">
-                    <img class="border-white" src="{{asset('images/287A2921.jpg')}}" alt="J B 1">
-                </div>
-            </div>
-            <div class="row">
-                <div class="photo photo-left">
-                    <img class="border-white" src="{{asset('images/287A2858.jpg')}}" alt="J B 2">
-                </div><div class="photo photo-right">
-                    <img class="border-red" src="{{asset('images/387ED5C2-D5FE-43E7-A8E8-EE705FD8062F.jpg')}}" alt="J B 1">
-                </div>
-            </div>
-        </div>
+    <div class="block gallery" id="gallery">
+        <img class="border-red" src="{{asset('images/01F0EBB7-1D49-4E42-B3D6-89370282CDC9.jpg')}}" alt="gallery-photo">
+        <img class="border-white" src="{{asset('images/287A2921.jpg')}}" alt="gallery-photo">
+        <img class="border-red" src="{{asset('images/287A2858.jpg')}}" alt="gallery-photo">
+        <img class="border-white" src="{{asset('images/387ED5C2-D5FE-43E7-A8E8-EE705FD8062F.jpg')}}" alt="gallery-photo">
+        <img class="border-red" src="{{asset('images/Crouching_Tiger_PROMO.png')}}" alt="Crouching Tiger">
+        <img class="border-white" src="{{asset('images/j_b_2.jpg')}}" alt="Brian & Jane 2">
+        <img class="border-red" src="{{asset('images/Two_Faced.jpg')}}" alt="Two Faced">
+        <img class="border-white" src="{{asset('images/j_b_1.jpg')}}" alt="Brian & Jane 1">
     </div>
 
     <div class="block contact btt-show" id="contact">

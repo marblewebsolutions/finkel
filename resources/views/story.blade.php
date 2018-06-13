@@ -3,7 +3,14 @@
 
 @section('main')
     @include('partials.nav', ['currentPage' => 'story'])
+    
     <div class="block">
+        <div class="border-orange">
+            <img src="{{asset('/images/FINKEL_Comic_Bio.jpg')}}" alt="Brian & Jane Comic">
+        </div>
+    </div>
+    
+    <div class="block hide">
         <div class="img-container border-white">
             <img src="{{asset('images/Crouching_Tiger_PROMO.png')}}" alt="Crouching Tiger">
         </div>
@@ -17,7 +24,7 @@
         </div>
     </div>
 
-    <div class="block">
+    <div class="block hide">
         <div class="box border-red mr-med">
             <p>Not quite definable by conventional genres, their avant-garde sensibilities will appeal to an audience
                 seeking a respite from the pedestrian daily grind and typical expectations. There’s an enchanting quality
@@ -32,7 +39,7 @@
         </div>
     </div>
 
-    <div class="block">
+    <div class="block hide">
         <div class="img-container border-white">
             <img src="{{asset('images/Two_Faced.jpg')}}" alt="Two Faced">
         </div>
@@ -45,7 +52,7 @@
         </div>
     </div>
 
-    <div class="block btt-show">
+    <div class="block btt-show hide">
         <div class="box border-red mr-med">
             <p>A tale of two spirits unravels curiously from the seams of F I N K E L’s new singles. Their ethereal
                 synthetic textures and rich vocal harmonies produce an aesthetic that grabs attention and gives it a nudge.

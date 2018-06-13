@@ -1,7 +1,7 @@
 .footer {
   padding: 1em;
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 100%;
 
   p {
@@ -10,6 +10,7 @@
 
   .mws-credit {
     bottom: .75em;
+    display: none;
     left: 8.3%;
     position: absolute;
     text-align: left;
@@ -34,7 +35,6 @@
 
   @media screen and (max-width: $sm) {
     padding-left: 8.3%;
-    text-align: left;
 
     .mws-credit {
       padding-top: .5em;

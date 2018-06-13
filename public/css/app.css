@@ -418,6 +418,518 @@
   padding-left: 4rem;
 }
 
+@-webkit-keyframes gal-img-1 {
+  0% {
+    left: -50em;
+    top: 5em;
+  }
+
+  20% {
+    left: -15em;
+    top: 6em;
+  }
+
+  40% {
+    left: 20em;
+    top: 5em;
+  }
+
+  60% {
+    left: 55em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 125em;
+    top: 6em;
+  }
+}
+
+@keyframes gal-img-1 {
+  0% {
+    left: -50em;
+    top: 5em;
+  }
+
+  20% {
+    left: -15em;
+    top: 6em;
+  }
+
+  40% {
+    left: 20em;
+    top: 5em;
+  }
+
+  60% {
+    left: 55em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 125em;
+    top: 6em;
+  }
+}
+
+@-webkit-keyframes gal-img-2 {
+  0% {
+    left: -50em;
+    top: 28em;
+  }
+
+  20% {
+    left: -15em;
+    top: 29em;
+  }
+
+  40% {
+    left: 20em;
+    top: 28em;
+  }
+
+  60% {
+    left: 55em;
+    top: 29em;
+  }
+
+  80% {
+    left: 90em;
+    top: 28em;
+  }
+
+  100% {
+    left: 125em;
+    top: 29em;
+  }
+}
+
+@keyframes gal-img-2 {
+  0% {
+    left: -50em;
+    top: 28em;
+  }
+
+  20% {
+    left: -15em;
+    top: 29em;
+  }
+
+  40% {
+    left: 20em;
+    top: 28em;
+  }
+
+  60% {
+    left: 55em;
+    top: 29em;
+  }
+
+  80% {
+    left: 90em;
+    top: 28em;
+  }
+
+  100% {
+    left: 125em;
+    top: 29em;
+  }
+}
+
+@-webkit-keyframes gal-img-3 {
+  0% {
+    left: -50em;
+    top: 45em;
+  }
+
+  20% {
+    left: -15em;
+    top: 46em;
+  }
+
+  40% {
+    left: 20em;
+    top: 45em;
+  }
+
+  60% {
+    left: 55em;
+    top: 46em;
+  }
+
+  80% {
+    left: 90em;
+    top: 45em;
+  }
+
+  100% {
+    left: 125em;
+    top: 46em;
+  }
+}
+
+@keyframes gal-img-3 {
+  0% {
+    left: -50em;
+    top: 45em;
+  }
+
+  20% {
+    left: -15em;
+    top: 46em;
+  }
+
+  40% {
+    left: 20em;
+    top: 45em;
+  }
+
+  60% {
+    left: 55em;
+    top: 46em;
+  }
+
+  80% {
+    left: 90em;
+    top: 45em;
+  }
+
+  100% {
+    left: 125em;
+    top: 46em;
+  }
+}
+
+@-webkit-keyframes gal-img-4 {
+  0% {
+    left: -30em;
+    top: 5em;
+  }
+
+  20% {
+    left: 0em;
+    top: 6em;
+  }
+
+  40% {
+    left: 30em;
+    top: 5em;
+  }
+
+  60% {
+    left: 60em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 120em;
+    top: 6em;
+  }
+}
+
+@keyframes gal-img-4 {
+  0% {
+    left: -30em;
+    top: 5em;
+  }
+
+  20% {
+    left: 0em;
+    top: 6em;
+  }
+
+  40% {
+    left: 30em;
+    top: 5em;
+  }
+
+  60% {
+    left: 60em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 120em;
+    top: 6em;
+  }
+}
+
+@-webkit-keyframes gal-img-5 {
+  0% {
+    left: -30em;
+    top: 5em;
+  }
+
+  20% {
+    left: 0em;
+    top: 6em;
+  }
+
+  40% {
+    left: 30em;
+    top: 5em;
+  }
+
+  60% {
+    left: 60em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 120em;
+    top: 6em;
+  }
+}
+
+@keyframes gal-img-5 {
+  0% {
+    left: -30em;
+    top: 5em;
+  }
+
+  20% {
+    left: 0em;
+    top: 6em;
+  }
+
+  40% {
+    left: 30em;
+    top: 5em;
+  }
+
+  60% {
+    left: 60em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 120em;
+    top: 6em;
+  }
+}
+
+@-webkit-keyframes gal-img-6 {
+  0% {
+    left: -30em;
+    top: 5em;
+  }
+
+  20% {
+    left: 0em;
+    top: 6em;
+  }
+
+  40% {
+    left: 30em;
+    top: 5em;
+  }
+
+  60% {
+    left: 60em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 120em;
+    top: 6em;
+  }
+}
+
+@keyframes gal-img-6 {
+  0% {
+    left: -30em;
+    top: 5em;
+  }
+
+  20% {
+    left: 0em;
+    top: 6em;
+  }
+
+  40% {
+    left: 30em;
+    top: 5em;
+  }
+
+  60% {
+    left: 60em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 120em;
+    top: 6em;
+  }
+}
+
+@-webkit-keyframes gal-img-7 {
+  0% {
+    left: -30em;
+    top: 5em;
+  }
+
+  20% {
+    left: 0em;
+    top: 6em;
+  }
+
+  40% {
+    left: 30em;
+    top: 5em;
+  }
+
+  60% {
+    left: 60em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 120em;
+    top: 6em;
+  }
+}
+
+@keyframes gal-img-7 {
+  0% {
+    left: -30em;
+    top: 5em;
+  }
+
+  20% {
+    left: 0em;
+    top: 6em;
+  }
+
+  40% {
+    left: 30em;
+    top: 5em;
+  }
+
+  60% {
+    left: 60em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 120em;
+    top: 6em;
+  }
+}
+
+@-webkit-keyframes gal-img-8 {
+  0% {
+    left: -30em;
+    top: 5em;
+  }
+
+  20% {
+    left: 0em;
+    top: 6em;
+  }
+
+  40% {
+    left: 30em;
+    top: 5em;
+  }
+
+  60% {
+    left: 60em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 120em;
+    top: 6em;
+  }
+}
+
+@keyframes gal-img-8 {
+  0% {
+    left: -30em;
+    top: 5em;
+  }
+
+  20% {
+    left: 0em;
+    top: 6em;
+  }
+
+  40% {
+    left: 30em;
+    top: 5em;
+  }
+
+  60% {
+    left: 60em;
+    top: 6em;
+  }
+
+  80% {
+    left: 90em;
+    top: 5em;
+  }
+
+  100% {
+    left: 120em;
+    top: 6em;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -447,7 +959,7 @@ html {
 }
 
 .back-to-top:hover {
-  color: #FED636;
+  color: #ffc700;
 }
 
 .back-to-top.active {
@@ -598,6 +1110,7 @@ html {
   background-repeat: repeat-y;
   background-size: 100% auto;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .view .wind-bg {
@@ -635,7 +1148,7 @@ html {
 }
 
 .border-orange {
-  border: 0.75em solid #FED636;
+  border: 0.75em solid #ffc700;
 }
 
 .border-pink {
@@ -714,7 +1227,7 @@ ul {
 .footer {
   padding: 1em;
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -724,6 +1237,7 @@ ul {
 
 .footer .mws-credit {
   bottom: .75em;
+  display: none;
   left: 8.3%;
   position: absolute;
   text-align: left;
@@ -746,7 +1260,6 @@ ul {
 @media screen and (max-width: 768px) {
   .footer {
     padding-left: 8.3%;
-    text-align: left;
   }
 
   .footer .mws-credit {
@@ -912,7 +1425,7 @@ ul {
 
 .nav .nav-link:hover a,
 .nav .nav-link.active a {
-  color: #FED636;
+  color: #ffc700;
 }
 
 .nav .nav-links {
@@ -928,7 +1441,7 @@ ul {
         -ms-flex-align: center;
             align-items: center;
     background: #fff;
-    border: 3px solid #FED636;
+    border: 3px solid #ffc700;
     border-radius: 1.5em;
     height: 4.5em;
     left: 2em;
@@ -996,12 +1509,12 @@ ul {
 
   .nav .nav-link:hover,
   .nav .nav-link.active {
-    color: #FED636;
+    color: #ffc700;
   }
 
   .nav .nav-link:hover a,
   .nav .nav-link.active a {
-    color: #FED636;
+    color: #ffc700;
   }
 }
 
@@ -1136,45 +1649,102 @@ ul {
   vertical-align: middle;
 }
 
-.home .gallery .photo {
-  display: inline-block;
-  width: 50%;
+.home .gallery {
+  height: 69em;
+  position: relative;
 }
 
-.home .gallery .photo img {
+.home .gallery img {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   height: auto;
-  margin: auto;
-  max-height: 34em;
-  max-width: 100%;
+  left: -50em;
+  max-height: 22em;
+  max-width: 22em;
+  position: absolute;
   width: auto;
 }
 
-.home .gallery .photo-left {
-  padding-right: 1rem;
+.home .gallery img:nth-of-type(1) {
+  -webkit-animation-name: gal-img-1;
+          animation-name: gal-img-1;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  top: 5em;
 }
 
-.home .gallery .photo-left img {
-  margin: auto 0 auto auto;
+.home .gallery img:nth-of-type(2) {
+  -webkit-animation-name: gal-img-2;
+          animation-name: gal-img-2;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  top: 28em;
 }
 
-.home .gallery .photo-right {
-  padding-left: 1rem;
+.home .gallery img:nth-of-type(3) {
+  -webkit-animation-name: gal-img-3;
+          animation-name: gal-img-3;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  top: 50em;
 }
 
-.home .gallery .photo-right img {
-  margin: auto auto auto 0;
+.home .gallery img:nth-of-type(4) {
+  -webkit-animation-name: gal-img-1;
+          animation-name: gal-img-1;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  top: 5em;
 }
 
-.home .gallery .row .photo {
-  vertical-align: top;
+.home .gallery img:nth-of-type(5) {
+  -webkit-animation-name: gal-img-2;
+          animation-name: gal-img-2;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  top: 28em;
 }
 
-.home .gallery .row:first-child {
-  padding-bottom: 2rem;
+.home .gallery img:nth-of-type(6) {
+  -webkit-animation-name: gal-img-3;
+          animation-name: gal-img-3;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  top: 50em;
 }
 
-.home .gallery .row:first-child .photo {
-  vertical-align: bottom;
+.home .gallery img:nth-of-type(7) {
+  -webkit-animation-name: gal-img-1;
+          animation-name: gal-img-1;
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  top: 5em;
+}
+
+.home .gallery img:nth-of-type(8) {
+  -webkit-animation-name: gal-img-2;
+          animation-name: gal-img-2;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  top: 28em;
 }
 
 .home .grid-container {
@@ -1267,7 +1837,7 @@ ul {
 }
 
 .home .header .down i:hover {
-  color: #FED636;
+  color: #ffc700;
 }
 
 .home .main {

@@ -27,46 +27,73 @@
   }
 
   .gallery {
-    .photo {
-      display: inline-block;
-      width: 50%;
-
-      img {
-        height: auto;
-        margin: auto;
-        max-height: 34em;
-        max-width: 100%;
-        width: auto;
+    height: 69em;
+    position: relative;
+    
+    img {
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      height: auto;
+      left: -50em;
+      max-height: 22em;
+      max-width: 22em;
+      position: absolute;
+      width: auto;
+      
+      &:nth-of-type(1) {
+        animation-name: gal-img-1;
+        animation-delay: 0s;
+        animation-duration: 20s;
+        top: 5em;
       }
-    }
-
-    .photo-left {
-      padding-right: 1rem;
-
-      img {
-        margin: auto 0 auto auto;
+      
+      &:nth-of-type(2) {
+        animation-name: gal-img-2;
+        animation-delay: 2s;
+        animation-duration: 20s;
+        top: 28em;
       }
-    }
-
-    .photo-right {
-      padding-left: 1rem;
-
-      img {
-        margin: auto auto auto 0;
+      
+      &:nth-of-type(3) {
+        animation-name: gal-img-3;
+        animation-delay: 3.5s;
+        animation-duration: 20s;
+        top: 50em;
       }
-    }
-
-    .row {
-      .photo {
-        vertical-align: top;
+      
+      &:nth-of-type(4) {
+        animation-name: gal-img-1;
+        animation-delay: 8s;
+        animation-duration: 20s;
+        top: 5em;
       }
-
-      &:first-child {
-        padding-bottom: 2rem;
-
-        .photo {
-          vertical-align: bottom;
-        }
+      
+      &:nth-of-type(5) {
+        animation-name: gal-img-2;
+        animation-delay: 7s;
+        animation-duration: 20s;
+        top: 28em;
+      }
+      
+      &:nth-of-type(6) {
+        animation-name: gal-img-3;
+        animation-delay: 11s;
+        animation-duration: 20s;
+        top: 50em;
+      }
+      
+      &:nth-of-type(7) {
+        animation-name: gal-img-1;
+        animation-delay: 16s;
+        animation-duration: 20s;
+        top: 5em;
+      }
+      
+      &:nth-of-type(8) {
+         animation-name: gal-img-2;
+        animation-delay: 15s;
+        animation-duration: 20s;
+        top: 28em;
       }
     }
   }
