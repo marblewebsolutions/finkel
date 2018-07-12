@@ -17,17 +17,21 @@ $(window).resize(function() {
 
 
 // Tour Schedule More or Less Toggle
-var $table = $(".shows table");
-var $toggle = $(".shows .more-toggle");
+var $shows = $($('.shows'));
+var $tables = $($shows.find("table"));
+var $showOnMoreTable = $($shows.find('.show-on-more'));
+var $toggle = $($shows.find(".more-toggle"));
 
 $toggle.click(function(e) {
     e.preventDefault();
-    if ($table.hasClass('more')) {
+    if ($shows.hasClass('more')) {
         // Showing Less
         $toggle.find('a').html('Show More');
+        $showOnMoreTable.slideUp(1000);
     } else {
         // Showing More
         $toggle.find('a').html('Show Less');
+        $showOnMoreTable.slideDown(1000);
     }
-    $table.toggleClass('more');
+    $shows.toggleClass('more');
 });

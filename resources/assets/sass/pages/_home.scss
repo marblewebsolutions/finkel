@@ -228,10 +228,6 @@
         width: 30vw;
       }
 
-      .show-on-more {
-        display: none;
-      }
-
       .tix {
         position: relative;
 
@@ -264,12 +260,6 @@
           display: none;
         }
       }
-
-      &.more {
-        .show-on-more {
-          display: table-row;
-        }
-      }
     }
 
     .box {
@@ -279,6 +269,14 @@
     .more-toggle {
       margin-bottom: 0;
       margin-top: .5em;
+    }
+    
+    .show-on-more {
+      display: none;
+      
+      table {
+        margin-top: -1em;
+      }
     }
   }
 

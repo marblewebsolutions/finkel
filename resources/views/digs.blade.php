@@ -10,3 +10,8 @@
         </div>
     </div>
 @stop
+
+@section('js')
+    <script src="http://sdks.shopifycdn.com/js-buy-sdk/v1/latest/index.umd.min.js"></script>
+    <script src="{{ url('/js/digs.js') }}"></script>
+@stop

@@ -19,15 +19,20 @@
             <table>
                 @foreach ($shows as $index => $show)
                     @if (time()/60/60/24 < date($show['time']))
-                        <tr class="show @if ($index > 4) show-on-more @endif">
+                        @if ($index == 4)
+                            </table>
+                            <div class="show-on-more">
+                                <table>
+                        @endif
+                        <tr class="show">
                             <td class="info date"><span class="month">{{date('M', $show['time'])}}</span><br><span class="day">{{date('j', $show['time'])}}</span></td>
                             <td class="info location">{{$show['location']}}</td>
                             <td class="info tix"><a target="_blank" href="{{$show['link']}}"><p><span class="x">TIX</span><span class="ckets">TICKETS</span></p></a></td>
                         </tr>
                     @endif
                 @endforeach
-                </div>
-            </table>
+                </table>
+            </div>
             <h3 class="more-toggle"><a href="#">Show More</a></h3>
         </div>
     </div>
