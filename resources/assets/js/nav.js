@@ -3,8 +3,10 @@
 /*global Navigation*/
 
 Navigation = {};
+
+var $nav = $('.nav');
+
 Navigation.initialize = function() {
-    var $nav = $(".nav");
     var $navLinks = $nav.find('.nav-link a');
     var currentPage = 'home';
     
@@ -19,7 +21,6 @@ Navigation.initialize = function() {
     
     // Navigation Links
     function initializePageSelect() {
-        var $navLink = $nav.find('.nav-link a');
         setPage(currentPage);
         
         $navLinks.click(function(e) {
@@ -61,17 +62,28 @@ Navigation.initialize = function() {
         // Show page
         $('.main .page').removeClass('active');
         $('.main .' + selectedPage).addClass('active');
+        
+        // Close mobile navigation
+        Navigation.closeMobileNav();
     }
     
     initializeMobileNav();
     initializePageSelect();
-}
+};
 
 Navigation.setPage = function(page) {
-    var $nav = $(".nav");
     var $pageNavLink = $($nav.find('[data-page="' + page + '"]').not('[data-page-loc]')[0]);
     $pageNavLink.click();
-}
+    Navigation.closeMobileNav();
+};
+
+Navigation.openMobileNav = function() {
+    $nav.addClass("active");
+};
+
+Navigation.closeMobileNav = function() {
+    $nav.removeClass("active");
+};
 
 Navigation.initialize();
 
