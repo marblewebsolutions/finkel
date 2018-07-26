@@ -10535,6 +10535,13 @@ Navigation.initialize = function () {
         $mobileToggle.click(function () {
             $nav.toggleClass("active");
         });
+
+        $(window).resize(function () {
+            var windowWidth = $(window).outerWidth();
+            if (windowWidth > 992 && $nav.hasClass('active')) {
+                Navigation.closeMobileNav();
+            }
+        });
     }
 
     // Navigation Links
