@@ -35,8 +35,11 @@ html {
 }
 
 .block {
+  margin: auto;
+  max-width: 70em;
   padding: $block-py 0;
   position: relative;
+  width: 90%;
 }
 
 .box {
@@ -106,11 +109,8 @@ html {
 }
 
 .main {
-  margin: auto;
-  max-width: 70em;
   padding: 1.25em 0 2.5em;
   position: relative;
-  width: 90%;
 }
 
 .no-scroll {
@@ -203,6 +203,12 @@ html {
     position: fixed;
     top: 0;
     width: 100vw;
+  }
+}
+
+@media screen and (max-width: $xs) {
+  .box {
+    padding: 2.5em 1em;
   }
 }
 

@@ -1,6 +1,35 @@
 .music-media {
-  .music {
+  .block-music {
     text-align: center;
+    
+    .tune-links {
+      width: auto;
+  
+      .box {
+        display: inline-block;
+  
+        a,
+        iframe {
+          display: inline-block;
+          vertical-align: middle;
+        }
+  
+        iframe {
+          margin: 0 .5em;
+  
+          &:hover {
+            cursor: url('/images/diamondcursor_lg.png'), auto;
+            opacity: .8;
+          }
+        }
+  
+        img {
+          height: auto;
+          margin: 0 .5em;
+          width: 56px;
+        }
+      }
+    }
   }
   
   .music-video {
@@ -12,35 +41,6 @@
 
     + .block {
       padding: 0 0 5rem;
-    }
-  }
-
-  .tune-links {
-    width: auto;
-
-    .box {
-      display: inline-block;
-
-      a,
-      iframe {
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-      iframe {
-        margin: 0 .5em;
-
-        &:hover {
-          cursor: url('/images/diamondcursor_lg.png'), auto;
-          opacity: .8;
-        }
-      }
-
-      img {
-        height: auto;
-        margin: 0 .5em;
-        width: 56px;
-      }
     }
   }
   
@@ -76,9 +76,11 @@
       max-width: 30em;
       width: 100%;
     }
-
-    .tune-links {
-      padding: 1em 0 0;
+    
+    .block-music {
+      .tune-links {
+        padding: 1em 0 0;
+      }
     }
   }
 }

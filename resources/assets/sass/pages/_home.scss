@@ -1,18 +1,18 @@
 .home {
   .contact {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: none;
     text-align: center;
+    width: 100%;
 
     .container {
       display: inline-block;
+      margin-bottom: 20px;
+      padding: 0 1em;
       vertical-align: middle;
-
-      &:first-child {
-        padding: 0 1em 0 0;
-      }
-
-      &:last-child {
-        padding: 0 0 0 1em;
-      }
     }
 
     .social {
@@ -22,6 +22,31 @@
         margin: 0 .5em;
         width: 52px;
         vertical-align: middle;
+      }
+    }
+    
+    .tune-links {
+      display: inline-block;
+  
+      a,
+      iframe {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      iframe {
+        margin: 0 .5em;
+
+        &:hover {
+          cursor: url('/images/diamondcursor_lg.png'), auto;
+          opacity: .8;
+        }
+      }
+
+      img {
+        height: auto;
+        margin: 0 .5em;
+        width: 56px;
       }
     }
   }
@@ -95,62 +120,6 @@
         animation-duration: 20s;
         top: 28em;
       }
-    }
-  }
-
-  .grid-container {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: auto auto auto;
-
-    .photo {
-      @include box-shadow();
-
-      img {
-        height: 100%;
-        object-fit: cover;
-        width: 100%;
-      }
-    }
-
-    .photo-1 {
-      grid-area: 1 / 1 / span 4 / span 1;
-    }
-
-    .photo-2 {
-      grid-area: 1 / 2 / span 3 / span 2;
-    }
-
-    .photo-3 {
-      grid-area: 4 / 2 / span 3 / span 1;
-    }
-
-    .photo-4 {
-      grid-area: 4 / 3 / span 4 / span 1;
-    }
-
-    .photo-5 {
-      grid-area: 5 / 1 / span 2 / span 1;
-    }
-
-    .photo-6 {
-      grid-area: 7 / 1 / span 3 / span 2;
-    }
-
-    .photo-7 {
-      grid-area: 8 / 3 / span 3 / span 1;
-    }
-
-    .photo-8 {
-      grid-area: 10 / 1 / span 4 / span 1;
-    }
-
-    .photo-9 {
-      grid-area: 10 / 2 / span 4 / span 1;
-    }
-
-    .photo-10 {
-      grid-area: 11 / 3 / span 3 / span 1;
     }
   }
 
@@ -279,38 +248,33 @@
       }
     }
   }
-
-  @media screen and (max-width: 1091px) and (min-width: 950px) {
+  
+  @media screen and (max-width: 1075px) {
     .contact {
       .container {
-        &:first-child {
-          padding: 0 1em;
-        }
-
-        &:last-child {
-          padding: 0 1em;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 772px) {
-    .contact {
-      .container {
-        display: block;
-
-        &:first-child {
-          padding: 0 0 1em;
-        }
-
-        &:last-child {
-          padding: 0;
+        &:nth-of-type(2) {
+          order: 2;
         }
       }
     }
   }
 
   @media screen and (max-width: $xs) {
+    .contact {
+      .container {
+        padding: 0;
+        width: 90%;
+        
+        p {
+          font-size: 1em;
+        }
+        
+        .box {
+          width: 100%;
+        }
+      }
+    }
+    
     .gallery {
       .photo-left {
         padding-right: .5rem;

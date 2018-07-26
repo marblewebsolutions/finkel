@@ -53,12 +53,21 @@
                 <a target="_blank" href="http://facebook.com/finkelband"><img src="{{asset('images/facebook_black.png')}}" alt="Facebook"></a>
             </p>
         </div>
-    </div><div class="container pl-sm">
+    </div><div class="container px-sm">
         <div class="border-orange email box">
             <h3>CONNECT WITH US</h3>
             <p class="mb-sm"><span class="stretch-word">management</span> || <a href="mailto:john@plustalent.net">john@plustalent.net</a></p>
             <p class="mb-sm"><span class="stretch-word">press</span> || <a href="mailto:george@planetarygroup.com">george@planetarygroup.com</a></p>
             <p><span class="stretch-word">band</span> || <a href="mailto:finkelband@gmail.com">finkelband@gmail.com</a></p>
+        </div>
+    </div><div class="container pl-sm">
+        <div class="box border-orange tune-links">
+            <h3>LISTEN ON</h3>
+            <p>
+                <a target="_blank" href="https://open.spotify.com/artist/4LLNGLNjMcaomz222tTNph?si=NZfpZc4hTl2ej9CslAwWYg"><img src="{{asset('images/spotify_black.png')}}" alt="Spotify"></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UC1i3es2uL002PbLxXV0KzpQ?view_as=subscriber"><img src="{{asset('images/youtube_black.png')}}" alt="YouTube"></a>
+                <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fuser-657791&color=black_white&size=56" style="width: 56px; height: 56px;"></iframe>
+            </p>
         </div>
     </div>
 </div>
