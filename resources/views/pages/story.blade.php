@@ -2,7 +2,7 @@
 
 <div class="block">
     <div class="border-orange">
-        <img src="{{asset('/images/FINKEL_Comic_Bio.jpg')}}" alt="Brian & Jane Comic">
+        <img src="{{asset('/images/finkel-story.jpg')}}" alt="Brian & Jane Story">
     </div>
 </div>
 
