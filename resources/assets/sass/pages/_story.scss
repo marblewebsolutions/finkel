@@ -1,33 +1,12 @@
 .story {
   text-align: center;
+  
+  .border-orange {
+    background: $orange;
+  }
 
   .block {
     padding: 1rem 0;
-  }
-
-  .box {
-    display: inline-block;
-    max-width: 35em;
-    vertical-align: middle;
-    width: 100%;
-
-    p {
-      text-align: justify;
-    }
-  }
-
-  .img-container {
-    display: inline-block;
-    max-width: 288px;
-    vertical-align: middle;
-
-    img {
-      height: auto;
-      margin: auto;
-      max-height: 34em;
-      max-width: 100%;
-      width: auto;
-    }
   }
 
   .nav {

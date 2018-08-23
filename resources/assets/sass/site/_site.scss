@@ -113,6 +113,10 @@ html {
   position: relative;
 }
 
+.move-with-mouse {
+  transition: 1s all ease;
+}
+
 .no-scroll {
   overflow: hidden;
 }

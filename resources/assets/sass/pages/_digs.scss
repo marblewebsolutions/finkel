@@ -6,6 +6,11 @@
       padding: 0 0 5rem;
     }
   }
+  
+  .shopify-buy-frame {
+    background: $black;
+    max-width: 600px;
+  }
 
   @media screen and (max-width: $med) {
     .nav {

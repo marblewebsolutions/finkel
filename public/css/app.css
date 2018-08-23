@@ -1047,6 +1047,11 @@ html {
   position: relative;
 }
 
+.move-with-mouse {
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -1806,6 +1811,14 @@ ul {
   top: 28em;
 }
 
+.home .gallery .border-red {
+  background: #FF4141;
+}
+
+.home .gallery .border-white {
+  background: #fff;
+}
+
 .home .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1992,30 +2005,26 @@ ul {
   text-align: center;
 }
 
-.music-media .block-music .tune-links {
-  width: auto;
-}
-
-.music-media .block-music .tune-links .box {
+.music-media .block-music .box {
   display: inline-block;
 }
 
-.music-media .block-music .tune-links .box a,
-.music-media .block-music .tune-links .box iframe {
+.music-media .block-music .box a,
+.music-media .block-music .box iframe {
   display: inline-block;
   vertical-align: middle;
 }
 
-.music-media .block-music .tune-links .box iframe {
+.music-media .block-music .box iframe {
   margin: 0 .5em;
 }
 
-.music-media .block-music .tune-links .box iframe:hover {
+.music-media .block-music .box iframe:hover {
   cursor: url("/images/diamondcursor_lg.png"), auto;
   opacity: .8;
 }
 
-.music-media .block-music .tune-links .box img {
+.music-media .block-music .box img {
   height: auto;
   margin: 0 .5em;
   width: 56px;
@@ -2059,50 +2068,16 @@ ul {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .music-media .album-cover {
-    display: block;
-    margin: auto;
-    max-width: 30em;
-    width: 100%;
-  }
-
-  .music-media .block-music .tune-links {
-    padding: 1em 0 0;
-  }
-}
-
 .story {
   text-align: center;
 }
 
+.story .border-orange {
+  background: #ffc700;
+}
+
 .story .block {
   padding: 1rem 0;
-}
-
-.story .box {
-  display: inline-block;
-  max-width: 35em;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.story .box p {
-  text-align: justify;
-}
-
-.story .img-container {
-  display: inline-block;
-  max-width: 288px;
-  vertical-align: middle;
-}
-
-.story .img-container img {
-  height: auto;
-  margin: auto;
-  max-height: 34em;
-  max-width: 100%;
-  width: auto;
 }
 
 .story .nav {
@@ -2137,6 +2112,11 @@ ul {
 
 .digs .nav + .block {
   padding: 0 0 5rem;
+}
+
+.digs .shopify-buy-frame {
+  background: #000;
+  max-width: 600px;
 }
 
 @media screen and (max-width: 992px) {

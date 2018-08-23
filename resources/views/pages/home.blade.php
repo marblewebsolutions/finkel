@@ -2,38 +2,44 @@
     <div class="container">
         @include('partials.nav')
         
-        <video class="border-orange" id="header-animation" autoplay loop muted playsinline preload="metadata">
-            <source src="{{ asset('video/FINKEL-web.mov') }}" type="video/mp4">
-            <img src="{{ asset('images/IMG_9806.PNG') }}" alt="FINKEL BAND">
-        </video>
+        <div class="move-with-mouse">
+            <video class="border-orange" id="header-animation" autoplay loop muted playsinline preload="metadata">
+                <source src="{{ asset('video/FINKEL-web.mov') }}" type="video/mp4">
+                <img src="{{ asset('images/IMG_9806.PNG') }}" alt="FINKEL BAND">
+            </video>
+        </div>
         <p class="down"><a class="smooth-scroll" href="#shows"><i class="material-icons">keyboard_arrow_down</i></a></p>
     </div>
 </div>
 
-<div class="block shows" id="shows">
-    <div class="box border-orange">
-        <h3>TOUR SCHEDULE</h3>
-        <table>
-            @foreach ($shows as $index => $show)
-                @if ($index == 4)
+@if (!empty($shows))
+    <div class="block shows" id="shows">
+        <div class="move-with-mouse">
+            <div class="box border-orange">
+                <h3>TOUR SCHEDULE</h3>
+                <table>
+                    @foreach ($shows as $index => $show)
+                        @if ($index == 4)
+                            </table>
+                            <div class="show-on-more">
+                                <table>
+                        @endif
+                        <tr class="show">
+                            <td class="info date"><span class="month">{{date('M', $show['time'])}}</span><br><span class="day">{{date('j', $show['time'])}}</span></td>
+                            <td class="info location">{{$show['location']}}</td>
+                            <td class="info tix"><a target="_blank" href="{{$show['link']}}"><p><span class="x">TIX</span><span class="ckets">TICKETS</span></p></a></td>
+                        </tr>
+                    @endforeach
                     </table>
-                    <div class="show-on-more">
-                        <table>
-                @endif
-                <tr class="show">
-                    <td class="info date"><span class="month">{{date('M', $show['time'])}}</span><br><span class="day">{{date('j', $show['time'])}}</span></td>
-                    <td class="info location">{{$show['location']}}</td>
-                    <td class="info tix"><a target="_blank" href="{{$show['link']}}"><p><span class="x">TIX</span><span class="ckets">TICKETS</span></p></a></td>
-                </tr>
-            @endforeach
-            </table>
+                </div>
+                <h3 class="more-toggle"><a href="#">Show More</a></h3>
+            </div>
         </div>
-        <h3 class="more-toggle"><a href="#">Show More</a></h3>
     </div>
-</div>
+@endif
 
 <div class="block gallery" id="gallery">
-    <img class="border-red" src="{{asset('images/01F0EBB7-1D49-4E42-B3D6-89370282CDC9.jpg')}}" alt="gallery-photo">
+    <img class="border-red" src="{{asset('images/finkel-square.jpg')}}" alt="gallery-photo">
     <img class="border-white" src="{{asset('images/287A2921.jpg')}}" alt="gallery-photo">
     <img class="border-red" src="{{asset('images/287A2858.jpg')}}" alt="gallery-photo">
     <img class="border-white" src="{{asset('images/387ED5C2-D5FE-43E7-A8E8-EE705FD8062F.jpg')}}" alt="gallery-photo">
@@ -44,7 +50,7 @@
 </div>
 
 <div class="block contact btt-show" id="contact">
-    <div class="container pr-sm">
+    <div class="container pr-sm move-with-mouse">
         <div class="border-orange social box">
             <h3>FIND US ON SOCIAL</h3>
             <p>
@@ -53,14 +59,14 @@
                 <a target="_blank" href="http://facebook.com/finkelband"><img src="{{asset('images/facebook_black.png')}}" alt="Facebook"></a>
             </p>
         </div>
-    </div><div class="container px-sm">
+    </div><div class="container px-sm move-with-mouse">
         <div class="border-orange email box">
             <h3>CONNECT WITH US</h3>
             <p class="mb-sm"><span class="stretch-word">management</span> || <a href="mailto:john@plustalent.net">john@plustalent.net</a></p>
             <p class="mb-sm"><span class="stretch-word">press</span> || <a href="mailto:george@planetarygroup.com">george@planetarygroup.com</a></p>
             <p><span class="stretch-word">band</span> || <a href="mailto:finkelband@gmail.com">finkelband@gmail.com</a></p>
         </div>
-    </div><div class="container pl-sm">
+    </div><div class="container pl-sm move-with-mouse">
         <div class="box border-orange tune-links">
             <h3>LISTEN ON</h3>
             <p>

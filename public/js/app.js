@@ -78,6 +78,7 @@ module.exports = __webpack_require__(6);
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
 /**
  * Base js file that can be used on any page.
@@ -85,9 +86,12 @@ module.exports = __webpack_require__(6);
  */
 
 /*global $*/
+/*global isMobileDevice*/
 
 // jQuery include
 window.$ = window.jQuery = __webpack_require__(2);
+
+isMobileDevice = typeof window.orientation !== "undefined" || navigator.userAgent.indexOf('IEMobile') !== -1;
 
 $(window).on('load', function () {
     // TODO: loading screen
@@ -139,6 +143,111 @@ $(window).scroll(function (e) {
             $btt.removeClass('active');
         }
     }
+});
+
+function moveWithMouse() {
+    if (isMobileDevice) {
+        return;
+    }
+
+    var x, y;
+    var windowWidth = $(window).outerWidth();
+    var windowHeight = $(window).outerHeight();
+    var $movingElems = $('.move-with-mouse');
+    var extraPadding = 12;
+
+    // Get initial element padding for all moving elements and give additional padding
+    $movingElems.each(function () {
+        var $this = $(this);
+
+        var top, right, bottom, left;
+
+        var _getInitialElementPad = getInitialElementPadding($this);
+
+        var _getInitialElementPad2 = _slicedToArray(_getInitialElementPad, 4);
+
+        top = _getInitialElementPad2[0];
+        right = _getInitialElementPad2[1];
+        bottom = _getInitialElementPad2[2];
+        left = _getInitialElementPad2[3];
+
+
+        top += extraPadding;
+        right += extraPadding;
+        bottom += extraPadding;
+        left += extraPadding;
+
+        $this.attr('data-original-padding', [top, right, bottom, left].join(' '));
+        $this.css('padding', top + "px " + right + "px " + bottom + "px " + left + "px");
+    });
+
+    $(window).mousemove(function (e) {
+        x = e.clientX;
+        y = e.clientY;
+
+        var xPer = x / windowWidth;
+        var yPer = y / windowHeight;
+
+        $movingElems.each(function () {
+            var $this = $(this);
+            var top, right, bottom, left;
+
+            var _$this$data$split$map = $this.data('original-padding').split(' ').map(function (item) {
+                return parseInt(item, 10);
+            });
+
+            var _$this$data$split$map2 = _slicedToArray(_$this$data$split$map, 4);
+
+            top = _$this$data$split$map2[0];
+            right = _$this$data$split$map2[1];
+            bottom = _$this$data$split$map2[2];
+            left = _$this$data$split$map2[3];
+
+
+            top += parseInt((.5 - yPer) * 2 * extraPadding, 10);
+            right += parseInt((xPer - .5) * 2 * extraPadding, 10);
+            bottom += parseInt((yPer - .5) * 2 * extraPadding, 10);
+            left += parseInt((.5 - xPer) * 2 * extraPadding, 10);
+
+            $this.css('padding', top + "px " + right + "px " + bottom + "px " + left + "px");
+        });
+    });
+
+    $(window).resize(function () {
+        windowWidth = $(window).outerWidth();
+        windowHeight = $(window).outerHeight();
+    });
+
+    function getInitialElementPadding($elem) {
+        var paddingArr = $elem.css('padding').split(' ');
+        var paddingLen = paddingArr.length;
+        var top, right, bottom, left;
+        if (paddingLen == 0) {
+            // No padding set
+            top = right = bottom = left = 0;
+        } else if (paddingLen == 1) {
+            // Padding applied to all sides
+            top = right = bottom = left = parseInt(paddingArr[0]);
+        } else if (paddingLen == 2) {
+            top = bottom = parseInt(paddingArr[0]);
+            right = left = parseInt(paddingArr[1]);
+        } else if (paddingLen == 3) {
+            top = parseInt(paddingArr[0]);
+            right = left = parseInt(paddingArr[1]);
+            bottom = parseInt(paddingArr[2]);
+        } else {
+            // paddingLen == 4
+            top = parseInt(paddingArr[0]);
+            right = parseInt(paddingArr[1]);
+            bottom = parseInt(paddingArr[2]);
+            left = parseInt(paddingArr[3]);
+        }
+        return [top, right, bottom, left];
+    }
+}
+
+$(document).ready(function () {
+    moveWithMouse();
 });
 
 /***/ }),
@@ -10686,10 +10795,23 @@ function Digs() {
         });
     }
 
+    function initializeProductHoverEffect() {
+        var $prodShirt = $digs.find('#product-component-f2e90d72d4d');
+        var $prodShirtBg = $prodShirt.find('.shopify-buy__product-img-wrapper');
+
+        console.log($prodShirt);
+        console.log($prodShirtBg);
+
+        $prodShirtBg.css('background', '#fff');
+    }
+
     initializeHomeLink();
+    initializeProductHoverEffect();
 }
 
-Digs();
+$(window).on('load', function () {
+    Digs();
+});
 
 /***/ }),
 /* 6 */

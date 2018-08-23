@@ -1,18 +1,18 @@
 @include('partials.nav')
 
 <div class="block music-video">
-    <div class="video-wrapper border-red mb-xl">
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/nuV16RMUfbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="video-wrapper border-red">
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/a6GrLNP69DE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="move-with-mouse">
+        <div class="video-wrapper border-red mb-xl">
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/nuV16RMUfbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper border-red">
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/a6GrLNP69DE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 
 <div class="block block-music">
-    <div class="album-cover split border-white">
-        <img src="{{ url('images/finkel-square.jpg') }}" alt="">
-    </div><div class="tune-links split pl-med">
+    <div class="move-with-mouse">
         <div class="box border-orange">
             <h3>LISTEN ON</h3>
             <p>
