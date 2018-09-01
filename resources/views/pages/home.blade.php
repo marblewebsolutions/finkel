@@ -8,7 +8,7 @@
                 <img src="{{ asset('images/IMG_9806.PNG') }}" alt="FINKEL BAND">
             </video>
         </div>
-        <p class="down"><a class="smooth-scroll" href="#shows"><i class="material-icons">keyboard_arrow_down</i></a></p>
+        <p class="down"><a class="smooth-scroll" href="{{ (!empty($shows) ? '#shows' : '#gallery') }}"><i class="material-icons">keyboard_arrow_down</i></a></p>
     </div>
 </div>
 
@@ -47,6 +47,21 @@
     <img class="border-white" src="{{asset('images/j_b_2.jpg')}}" alt="Brian & Jane 2">
     <img class="border-red" src="{{asset('images/Two_Faced.jpg')}}" alt="Two Faced">
     <img class="border-white" src="{{asset('images/j_b_1.jpg')}}" alt="Brian & Jane 1">
+    
+    <img class="border-red" src="{{asset('images/finkel-square.jpg')}}" alt="gallery-photo">
+    <img class="border-white" src="{{asset('images/287A2921.jpg')}}" alt="gallery-photo">
+    <img class="border-red" src="{{asset('images/287A2858.jpg')}}" alt="gallery-photo">
+    <img class="border-white" src="{{asset('images/387ED5C2-D5FE-43E7-A8E8-EE705FD8062F.jpg')}}" alt="gallery-photo">
+    <img class="border-red" src="{{asset('images/Crouching_Tiger_PROMO.png')}}" alt="Crouching Tiger">
+    <img class="border-white" src="{{asset('images/j_b_2.jpg')}}" alt="Brian & Jane 2">
+    <img class="border-red" src="{{asset('images/Two_Faced.jpg')}}" alt="Two Faced">
+    <img class="border-white" src="{{asset('images/j_b_1.jpg')}}" alt="Brian & Jane 1">
+    
+    <div class="cover"></div>
+    
+    <div class="close-container">
+        <p><a href="#">&times;</a></p>
+    </div>
 </div>
 
 <div class="block contact btt-show" id="contact">

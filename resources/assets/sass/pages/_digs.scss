@@ -7,9 +7,34 @@
     }
   }
   
-  .shopify-buy-frame {
-    background: $black;
-    max-width: 600px;
+  .product-items {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px 20px;
+    margin-top: 5em;
+    
+    .pp-buy-button {
+      margin: 1rem 0;
+      text-align: center;
+    }
+    
+    .product-item {
+      background: $black;
+      max-width: 275px;
+      place-self: center;
+    }
+    
+    .product-name {
+      font-size: 2rem;
+      margin: 1rem 0;
+      text-align: center;
+    }
+    
+    .product-price {
+      font-style: italic;
+      margin: 1rem 0;
+      text-align: center;
+    }
   }
 
   @media screen and (max-width: $med) {
