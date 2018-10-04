@@ -1,5 +1,5 @@
 @mixin border($color) {
-  border: .75em solid $color;
+  border: .75rem solid $color;
 }
 
 @mixin box-shadow($shadow: 2px 2px 18px $black-trans-20) {

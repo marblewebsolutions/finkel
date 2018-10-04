@@ -1,6 +1,6 @@
 .home {
   .contact {
-    align-items: center;
+    align-items: top;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -12,7 +12,21 @@
       display: inline-block;
       margin-bottom: 20px;
       padding: 0 1em;
-      vertical-align: middle;
+      vertical-align: top;
+    }
+    
+    .mailchimp-toggle {
+      background: $red-trans-30;
+      margin: 1em 0 0;
+      
+      &:hover {
+        background: $red-trans-60;
+      }
+    }
+    
+    .mailchimp-wrapper {
+      display: none;
+      max-width: 300px;
     }
 
     .social {

@@ -80,6 +80,12 @@
             <p class="mb-sm"><span class="stretch-word">management</span> || <a href="mailto:john@plustalent.net">john@plustalent.net</a></p>
             <p class="mb-sm"><span class="stretch-word">press</span> || <a href="mailto:george@planetarygroup.com">george@planetarygroup.com</a></p>
             <p><span class="stretch-word">band</span> || <a href="mailto:finkelband@gmail.com">finkelband@gmail.com</a></p>
+            
+            <div class="mailchimp-wrapper">
+                @include('partials.mailchimp')
+            </div>
+            
+            <div class="btn mailchimp-toggle"><p>Sign up for our Newsletter</p></div>
         </div>
     </div><div class="container pl-sm move-with-mouse">
         <div class="box border-orange tune-links">

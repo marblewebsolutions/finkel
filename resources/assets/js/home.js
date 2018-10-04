@@ -153,8 +153,29 @@ function Home() {
         });
     }
     
+    function initializeMailchimp() {
+        var $wrapper = $('.mailchimp-wrapper');
+        var $toggle = $('.mailchimp-toggle');
+        
+        console.log($toggle);
+        
+        $toggle.click(function() {
+            console.log('toggle');
+            if ($wrapper.hasClass('active')) {
+                $toggle.removeClass('active');
+                $wrapper.removeClass('active');
+                $wrapper.slideUp();
+            } else {
+                $toggle.addClass('active');
+                $wrapper.addClass('active');
+                $wrapper.slideDown();
+            }
+        });
+    }
+    
     initializeGallery();
     initializeTourSchedule();
+    initializeMailchimp();
 }
 
 Home();

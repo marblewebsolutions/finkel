@@ -72,7 +72,6 @@ html {
 
 .btn {
   background: $white;
-  border-radius: 1em;
   @include box-shadow();
   color: $text;
   cursor: url('/images/diamondcursor_lg.png'), auto;
