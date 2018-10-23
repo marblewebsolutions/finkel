@@ -1,4 +1,29 @@
 .home {
+  .block-preorder {
+    padding: 5em 0 11em;
+    text-align: center;
+    
+    h3 {
+      font-size: 36px;
+    }
+    
+    .box {
+      display: inline-block;
+    }
+    
+    .btn {
+      background: $red-trans-30;
+      color: $text;
+      font-size: 20px;
+      margin: 0 .5em;
+      
+      &:hover {
+        background: $red-trans-60;
+        color: $yellow;
+      }
+    }
+  }
+  
   .contact {
     align-items: top;
     display: flex;
@@ -20,6 +45,10 @@
       margin: 1em 0 0;
       
       &:hover {
+        p {
+          color: $yellow;
+        }
+        
         background: $red-trans-60;
       }
     }

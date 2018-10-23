@@ -76,10 +76,15 @@ html {
   color: $text;
   cursor: url('/images/diamondcursor_lg.png'), auto;
   font-size: 1.5rem;
+  font-weight: bold;
   margin: 1em auto;
   padding: .5em;
   text-align: center;
   transition: all .3s ease;
+  
+  p {
+    font-weight: bold;
+  }
 
   &:hover,
   &.active {

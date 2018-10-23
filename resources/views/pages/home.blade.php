@@ -8,7 +8,21 @@
                 <img src="{{ asset('images/IMG_9806.PNG') }}" alt="FINKEL BAND">
             </video>
         </div>
-        <p class="down"><a class="smooth-scroll" href="{{ (!empty($shows) ? '#shows' : '#gallery') }}"><i class="material-icons">keyboard_arrow_down</i></a></p>
+        <p class="down"><a class="smooth-scroll" href="{{ (!empty($shows) ? '#shows' : '#preorder') }}"><i class="material-icons">keyboard_arrow_down</i></a></p>
+    </div>
+</div>
+
+<div class="block block-preorder" id="preorder">
+    <div class="container move-with-mouse">
+        <div class="box border-orange">
+            <h3 class="mb-xs">L E X I C O N</h3>
+            
+            <p class="mb-med">PRE-ORDER NOW ON</p>
+            
+            <p>
+                <a class="btn" href="https://blssmr.co/2PnMJQk" target="_blank">Apple Music</a>
+            </p>
+        </div>
     </div>
 </div>
 
