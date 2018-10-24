@@ -5,7 +5,8 @@ a {
   &:active,
   &:focus,
   &:hover {
-    cursor: url('/images/diamondcursor_lg.png'), auto;
+    //cursor: url('/images/diamondcursor_lg.png'), auto;
+    cursor: pointer;
   }
 }
 

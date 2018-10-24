@@ -9,7 +9,8 @@
     top: 0;
 
     &:hover {
-      cursor: url('/images/diamondcursor_lg.png'), auto;
+      //cursor: url('/images/diamondcursor_lg.png'), auto;
+      cursor: pointer;
     }
 
     .line {
@@ -148,7 +149,8 @@
     top: 0;
 
     &:hover {
-      cursor: url('/images/diamondcursor_lg.png'), auto;
+      //cursor: url('/images/diamondcursor_lg.png'), auto;
+      cursor: pointer;
     }
 
     .line {

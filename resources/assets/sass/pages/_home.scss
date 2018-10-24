@@ -81,7 +81,8 @@
         margin: 0 .5em;
 
         &:hover {
-          cursor: url('/images/diamondcursor_lg.png'), auto;
+          //cursor: url('/images/diamondcursor_lg.png'), auto;
+          cursor: pointer;
           opacity: .8;
         }
       }
@@ -111,7 +112,8 @@
       width: auto;
       
       &:hover {
-        cursor: url('/images/diamondcursor_lg.png'), auto;
+        //cursor: url('/images/diamondcursor_lg.png'), auto;
+        cursor: pointer;
       }
       
       &.fullscreen {
@@ -154,7 +156,8 @@
       &:hover {
         a {
           color: $orange;
-          cursor: url('/images/diamondcursor_lg.png'), auto;
+          //cursor: url('/images/diamondcursor_lg.png'), auto;
+          cursor: pointer;
         }
       }
     }
