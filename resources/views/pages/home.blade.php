@@ -15,7 +15,7 @@
 <div class="block block-preorder" id="preorder">
     <div class="container move-with-mouse">
         <div class="box border-orange">
-            <h3 class="mb-xs">L E X I C O N</h3>
+            <h3 class="mb-xs stretch-word">LEXICON</h3>
             
             <p class="mb-med">LISTEN NOW ON</p>
             
