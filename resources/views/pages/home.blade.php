@@ -17,10 +17,11 @@
         <div class="box border-orange">
             <h3 class="mb-xs">L E X I C O N</h3>
             
-            <p class="mb-med">PRE-ORDER NOW ON</p>
+            <p class="mb-med">LISTEN NOW ON</p>
             
             <p>
                 <a class="btn" href="https://blssmr.co/2PnMJQk" target="_blank">Apple Music</a>
+                <a class="btn" href="https://open.spotify.com/track/1VWRb4ZTUueH6kghpEHiBI?si=91RWkeT9RcCbfXHyCvxpdA" target="_blank">Spotify</a>
             </p>
         </div>
     </div>
