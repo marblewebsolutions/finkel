@@ -1,68 +1,68 @@
-.music-media {
-  .block-music {
-    text-align: center;
+// .music-media {
+//   .block-music {
+//     text-align: center;
   
-    .box {
-      display: inline-block;
+//     .box {
+//       display: inline-block;
 
-      a,
-      iframe {
-        display: inline-block;
-        vertical-align: middle;
-      }
+//       a,
+//       iframe {
+//         display: inline-block;
+//         vertical-align: middle;
+//       }
 
-      iframe {
-        margin: 0 .5em;
+//       iframe {
+//         margin: 0 .5em;
 
-        &:hover {
-          //cursor: url('/images/diamondcursor_lg.png'), auto;
-          cursor: pointer;
-          opacity: .8;
-        }
-      }
+//         &:hover {
+//           //cursor: url('/images/diamondcursor_lg.png'), auto;
+//           cursor: pointer;
+//           opacity: .8;
+//         }
+//       }
 
-      img {
-        height: auto;
-        margin: 0 .5em;
-        width: 56px;
-      }
-    }
-  }
+//       img {
+//         height: auto;
+//         margin: 0 .5em;
+//         width: 56px;
+//       }
+//     }
+//   }
   
-  .music-video {
-    padding: 0;
-  }
+//   .music-video {
+//     padding: 0;
+//   }
 
-  .nav {
-    padding: 2.5em 0 0;
+//   .nav {
+//     padding: 2.5em 0 0;
 
-    + .block {
-      padding: 0 0 5rem;
-    }
-  }
+//     + .block {
+//       padding: 0 0 5rem;
+//     }
+//   }
   
-  .video-wrapper {
-  	position: relative;
-  	padding-bottom: 56.25%; /* 16:9 */
-  	padding-top: 25px;
-  	height: 0;
+//   .video-wrapper {
+//   	position: relative;
+//   	padding-bottom: 56.25%; /* 16:9 */
+//   	padding-top: 25px;
+//   	height: 0;
   	
-  	iframe {
-    	position: absolute;
-    	top: 0;
-    	left: 0;
-    	width: 100%;
-    	height: 100%;
-    }
-  }
+//   	iframe {
+//     	position: absolute;
+//     	top: 0;
+//     	left: 0;
+//     	width: 100%;
+//     	height: 100%;
+//     }
+//   }
 
-  @media screen and (max-width: $med) {
-    .nav {
-      padding: 1.5em 1em;
+//   @media screen and (max-width: $med) {
+//     .nav {
+//       padding: 1.5em 1em;
 
-      + .block {
-        padding: 5rem 0;
-      }
-    }
-  }
-}
+//       + .block {
+//         padding: 5rem 0;
+//       }
+//     }
+//   }
+// }

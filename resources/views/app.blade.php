@@ -25,37 +25,33 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    <div class="view" id="top">
-        @include('partials.static')
-
-        <video class="wind-bg" id="wind-bg" autoplay loop muted playsinline preload="metadata">
-            <source src="{{ asset('video/FKL7.mp4') }}" type="video/mp4">
-        </video>
-
-        <div class="main">
-            <div class="page home active">
-                @include('pages.home')
-            </div>
-            
-            <div class="page story">
-                @include('pages.story')
-            </div>
-            
-            <div class="page music-media">
-                @include('pages.music-media')
-            </div>
-            
-            <div class="page digs">
-                @include('pages.digs')
-            </div>
-            
-            @include('partials.back-to-top')
-        </div>
-
+    <div class="view">
+        @include('partials.header')
+        <div class="page-border left"></div>
+        <div class="page-border right"></div>
         @include('partials.footer')
+        
+        <div class="main">
+            <section id="section-1">
+                <div class="section-content">
+                    <h1>Home</h1>
+                </div>
+            </section>
+            
+            <section id="section-2">
+                <div class="section-content">
+                    <h1>Live</h1>
+                </div>
+            </section>
+            
+            <section id="section-3">
+                <div class="section-content">
+                    <h1>Contact</h1>
+                </div>
+            </section>
+        </div>
     </div>
 
-    <!--<script src="https://sdks.shopifycdn.com/js-buy-sdk/v1/latest/index.umd.min.js"></script>-->
     <script src="{{ url('js/app.js') }}"></script>
 </body>
 </html>

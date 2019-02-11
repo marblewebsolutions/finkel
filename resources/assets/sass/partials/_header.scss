@@ -1,0 +1,21 @@
+.header {
+    background: $white;
+    display: flex;
+    height: #{$page-border-width};
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: $page-cover;
+    
+    .logo {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: $md) {
+  .header {
+    width: 100%;
+  }
+}

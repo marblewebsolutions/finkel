@@ -1,375 +1,375 @@
-.home {
-  .block-preorder {
-    padding: 5em 0 11em;
-    text-align: center;
+// .home {
+//   .block-preorder {
+//     padding: 5em 0 11em;
+//     text-align: center;
     
-    h3 {
-      font-size: 36px;
-    }
+//     h3 {
+//       font-size: 36px;
+//     }
     
-    .box {
-      display: inline-block;
-    }
+//     .box {
+//       display: inline-block;
+//     }
     
-    .btn {
-      background: $red-trans-30;
-      color: darken($text, .2);
-      display: inline-block;
-      font-size: 20px;
-      margin: 0 .5em;
+//     .btn {
+//       background: $red-trans-30;
+//       color: darken($text, .2);
+//       display: inline-block;
+//       font-size: 20px;
+//       margin: 0 .5em;
       
-      &:not(first-child) {
-        margin: 1em .5em 0;
-      }
+//       &:not(first-child) {
+//         margin: 1em .5em 0;
+//       }
       
-      &:hover {
-        background: $red-trans-60;
-        color: $yellow;
-      }
-    }
-  }
+//       &:hover {
+//         background: $red-trans-60;
+//         color: $yellow;
+//       }
+//     }
+//   }
   
-  .contact {
-    align-items: top;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    max-width: none;
-    text-align: center;
-    width: 100%;
+//   .contact {
+//     align-items: top;
+//     display: flex;
+//     flex-flow: row wrap;
+//     justify-content: center;
+//     max-width: none;
+//     text-align: center;
+//     width: 100%;
 
-    .container {
-      display: inline-block;
-      margin-bottom: 20px;
-      padding: 0 1em;
-      vertical-align: top;
-    }
+//     .container {
+//       display: inline-block;
+//       margin-bottom: 20px;
+//       padding: 0 1em;
+//       vertical-align: top;
+//     }
     
-    .mailchimp-toggle {
-      background: $red-trans-30;
-      margin: 1em 0 0;
+//     .mailchimp-toggle {
+//       background: $red-trans-30;
+//       margin: 1em 0 0;
       
-      &:hover {
-        p {
-          color: $yellow;
-        }
+//       &:hover {
+//         p {
+//           color: $yellow;
+//         }
         
-        background: $red-trans-60;
-      }
-    }
+//         background: $red-trans-60;
+//       }
+//     }
     
-    .mailchimp-wrapper {
-      display: none;
-      max-width: 300px;
-    }
+//     .mailchimp-wrapper {
+//       display: none;
+//       max-width: 300px;
+//     }
 
-    .social {
-      img {
-        display: inline-block;
-        height: auto;
-        margin: 0 .5em;
-        width: 52px;
-        vertical-align: middle;
-      }
-    }
+//     .social {
+//       img {
+//         display: inline-block;
+//         height: auto;
+//         margin: 0 .5em;
+//         width: 52px;
+//         vertical-align: middle;
+//       }
+//     }
     
-    .tune-links {
-      display: inline-block;
+//     .tune-links {
+//       display: inline-block;
   
-      a,
-      iframe {
-        display: inline-block;
-        vertical-align: middle;
-      }
+//       a,
+//       iframe {
+//         display: inline-block;
+//         vertical-align: middle;
+//       }
 
-      iframe {
-        margin: 0 .5em;
+//       iframe {
+//         margin: 0 .5em;
 
-        &:hover {
-          //cursor: url('/images/diamondcursor_lg.png'), auto;
-          cursor: pointer;
-          opacity: .8;
-        }
-      }
+//         &:hover {
+//           //cursor: url('/images/diamondcursor_lg.png'), auto;
+//           cursor: pointer;
+//           opacity: .8;
+//         }
+//       }
 
-      img {
-        height: auto;
-        margin: 0 .5em;
-        width: 56px;
-      }
-    }
-  }
+//       img {
+//         height: auto;
+//         margin: 0 .5em;
+//         width: 56px;
+//       }
+//     }
+//   }
 
-  .gallery {
-    height: 69em;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
+//   .gallery {
+//     height: 69em;
+//     max-width: 100%;
+//     position: relative;
+//     width: 100%;
     
-    img {
-      //animation-iteration-count: infinite;
-      //animation-timing-function: linear;
-      height: auto;
-      left: -500px;
-      max-height: 22em;
-      max-width: 22em;
-      position: absolute;
-      width: auto;
+//     img {
+//       //animation-iteration-count: infinite;
+//       //animation-timing-function: linear;
+//       height: auto;
+//       left: -500px;
+//       max-height: 22em;
+//       max-width: 22em;
+//       position: absolute;
+//       width: auto;
       
-      &:hover {
-        //cursor: url('/images/diamondcursor_lg.png'), auto;
-        cursor: pointer;
-      }
+//       &:hover {
+//         //cursor: url('/images/diamondcursor_lg.png'), auto;
+//         cursor: pointer;
+//       }
       
-      &.fullscreen {
-        bottom: 0;
-        left: 0 !important;
-        margin: auto;
-        max-height: 90%;
-        max-width: 90%;
-        position: fixed;
-        right: 0;
-        top: 0 !important;
-        z-index: 2;
-      }
-    }
+//       &.fullscreen {
+//         bottom: 0;
+//         left: 0 !important;
+//         margin: auto;
+//         max-height: 90%;
+//         max-width: 90%;
+//         position: fixed;
+//         right: 0;
+//         top: 0 !important;
+//         z-index: 2;
+//       }
+//     }
     
-    .border-red {
-      background: $red;
-    }
+//     .border-red {
+//       background: $red;
+//     }
     
-    .border-white {
-      background: $white;
-    }
+//     .border-white {
+//       background: $white;
+//     }
     
-    .close-container {
-      opacity: 0;
-      position: fixed;
-      right: 7%;
-      top: 7%;
-      transition: .5s opacity linear;
-      z-index: 3;
+//     .close-container {
+//       opacity: 0;
+//       position: fixed;
+//       right: 7%;
+//       top: 7%;
+//       transition: .5s opacity linear;
+//       z-index: 3;
       
-      p {
-        font-size: 4em;
-      }
+//       p {
+//         font-size: 4em;
+//       }
       
-      &.active {
-        opacity: 1;
-      }
+//       &.active {
+//         opacity: 1;
+//       }
       
-      &:hover {
-        a {
-          color: $orange;
-          //cursor: url('/images/diamondcursor_lg.png'), auto;
-          cursor: pointer;
-        }
-      }
-    }
+//       &:hover {
+//         a {
+//           color: $orange;
+//           //cursor: url('/images/diamondcursor_lg.png'), auto;
+//           cursor: pointer;
+//         }
+//       }
+//     }
     
-    .cover {
-      background: $black-trans-60;
-      height: 100vh;
-      left: 0;
-      opacity: 0;
-      pointer-events: none;
-      position: fixed;
-      top: 0;
-      transition: .5s opacity linear;
-      width: 100vw;
-      z-index: 1;
+//     .cover {
+//       background: $black-trans-60;
+//       height: 100vh;
+//       left: 0;
+//       opacity: 0;
+//       pointer-events: none;
+//       position: fixed;
+//       top: 0;
+//       transition: .5s opacity linear;
+//       width: 100vw;
+//       z-index: 1;
       
-      &.active {
-        opacity: 1;
-        pointer-events: auto;
-      }
-    }
-  }
+//       &.active {
+//         opacity: 1;
+//         pointer-events: auto;
+//       }
+//     }
+//   }
 
-  .header {
-    display: flex;
-    min-height: 100vh;
-    padding: 2.5em 0;
+//   .header {
+//     display: flex;
+//     min-height: 100vh;
+//     padding: 2.5em 0;
 
-    video {
-      @include box-shadow();
-      height: auto;
-      width: 100%;
-    }
+//     video {
+//       @include box-shadow();
+//       height: auto;
+//       width: 100%;
+//     }
 
-    .container {
-      margin: auto;
-    }
+//     .container {
+//       margin: auto;
+//     }
 
-    .down {
-      margin-top: 2em;
-      text-align: center;
+//     .down {
+//       margin-top: 2em;
+//       text-align: center;
 
-      i {
-        color: $text-light;
-        font-size: 5em;
-        @include transition();
+//       i {
+//         color: $text-light;
+//         font-size: 5em;
+//         @include transition();
 
-        &:hover {
-          color: $orange;
-        }
-      }
-    }
-  }
+//         &:hover {
+//           color: $orange;
+//         }
+//       }
+//     }
+//   }
 
-  .main {
-    padding: 0 0 $block-py;
-  }
+//   .main {
+//     padding: 0 0 $block-py;
+//   }
 
-  .nav {
-    margin: 0 0 2.5em;
-  }
+//   .nav {
+//     margin: 0 0 2.5em;
+//   }
 
-  .shows {
-    text-align: center;
+//   .shows {
+//     text-align: center;
 
-    h3 {
-      margin-bottom: .5em;
-    }
+//     h3 {
+//       margin-bottom: .5em;
+//     }
 
-    table {
-      border-collapse: separate;
-      border-spacing: 0 1em;
-      margin: auto;
+//     table {
+//       border-collapse: separate;
+//       border-spacing: 0 1em;
+//       margin: auto;
 
-      td {
-        font-size: 1.5rem;
-        padding: .4em;
-      }
+//       td {
+//         font-size: 1.5rem;
+//         padding: .4em;
+//       }
 
-      .date {
-        .day {
-          font-size: 1.5rem;
-        }
-      }
+//       .date {
+//         .day {
+//           font-size: 1.5rem;
+//         }
+//       }
 
-      .date,
-      .tix {
-        background: $yellow;
-        width: 4.5em;
-      }
+//       .date,
+//       .tix {
+//         background: $yellow;
+//         width: 4.5em;
+//       }
 
-      .location {
-        background: $yellow-light;
-        max-width: 22em;
-        width: 30vw;
-      }
+//       .location {
+//         background: $yellow-light;
+//         max-width: 22em;
+//         width: 30vw;
+//       }
 
-      .tix {
-        position: relative;
+//       .tix {
+//         position: relative;
 
-        a {
-          display: flex;
-          height: 100%;
-          left: 0;
-          position: absolute;
-          top: 0;
-          @include transition(background);
-          width: 100%;
+//         a {
+//           display: flex;
+//           height: 100%;
+//           left: 0;
+//           position: absolute;
+//           top: 0;
+//           @include transition(background);
+//           width: 100%;
 
-          p {
-            color: $black;
-            font-size: 1rem;
-            font-weight: bold;
-            margin: auto;
-          }
+//           p {
+//             color: $black;
+//             font-size: 1rem;
+//             font-weight: bold;
+//             margin: auto;
+//           }
 
-          &:hover {
-            background: $red;
-          }
-        }
+//           &:hover {
+//             background: $red;
+//           }
+//         }
 
-        .ckets {
-          display: block;
-        }
+//         .ckets {
+//           display: block;
+//         }
 
-        .x {
-          display: none;
-        }
-      }
-    }
+//         .x {
+//           display: none;
+//         }
+//       }
+//     }
 
-    .box {
-      display: inline-block;
-    }
+//     .box {
+//       display: inline-block;
+//     }
 
-    .more-toggle {
-      margin-bottom: 0;
-      margin-top: .5em;
-    }
+//     .more-toggle {
+//       margin-bottom: 0;
+//       margin-top: .5em;
+//     }
     
-    .show-on-more {
-      display: none;
+//     .show-on-more {
+//       display: none;
       
-      table {
-        margin-top: -1em;
-      }
-    }
-  }
+//       table {
+//         margin-top: -1em;
+//       }
+//     }
+//   }
   
-  @media screen and (max-width: 1075px) {
-    .contact {
-      .container {
-        &:nth-of-type(2) {
-          order: 2;
-        }
-      }
-    }
-  }
+//   @media screen and (max-width: 1075px) {
+//     .contact {
+//       .container {
+//         &:nth-of-type(2) {
+//           order: 2;
+//         }
+//       }
+//     }
+//   }
 
-  @media screen and (max-width: $xs) {
-    .contact {
-      .container {
-        padding: 0;
-        width: 90%;
+//   @media screen and (max-width: $xs) {
+//     .contact {
+//       .container {
+//         padding: 0;
+//         width: 90%;
         
-        p {
-          font-size: 1em;
-        }
+//         p {
+//           font-size: 1em;
+//         }
         
-        .box {
-          width: 100%;
-        }
-      }
-    }
+//         .box {
+//           width: 100%;
+//         }
+//       }
+//     }
     
-    .gallery {
-      .photo-left {
-        padding-right: .5rem;
-      }
+//     .gallery {
+//       .photo-left {
+//         padding-right: .5rem;
+//       }
 
-      .photo-right {
-        padding-left: .5rem;
-      }
+//       .photo-right {
+//         padding-left: .5rem;
+//       }
 
-      .row:first-child {
-        padding-bottom: 1rem;
-      }
-    }
+//       .row:first-child {
+//         padding-bottom: 1rem;
+//       }
+//     }
 
-    .shows {
-      table {
-        .date {
-          width: auto;
-        }
+//     .shows {
+//       table {
+//         .date {
+//           width: auto;
+//         }
 
-        .tix {
-          width: 2.25em;
+//         .tix {
+//           width: 2.25em;
 
-          .ckets {
-            display: none;
-          }
+//           .ckets {
+//             display: none;
+//           }
 
-          .x {
-            display: block;
-          }
-        }
-      }
-    }
-  }
-}
+//           .x {
+//             display: block;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

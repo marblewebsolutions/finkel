@@ -1,8 +1,6 @@
 // Media Queries
-$xxs: 420px;
-$xs: 576px;
-$sm: 768px;
-$med: 992px;
+$sm: 600px;
+$md: 900px;
 $lg: 1200px;
 
 // Font Sizes
@@ -12,13 +10,16 @@ $font-size-h3: 2rem;
 $font-size-p: 1.25rem;
 $font-size-html: 12px;
 
-// Layout Spacing
+// Layout Variables
 $block-py: 5rem;
 $main-px: 10em;
+$page-border-width: 100px;
+$scroll-bar-width: 17px;
 
 // Z Indexes
 $nav-mobile-z: 900;
 $nav-z: 1000;
+$page-cover: 1000;
 $btt-z: 1100;
 $modal-z: 1200;
 

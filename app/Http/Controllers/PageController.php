@@ -37,6 +37,6 @@ class PageController extends Controller
             }
         }
 
-        return view('app', compact('shows'));
+        return view('app');
     }
 }

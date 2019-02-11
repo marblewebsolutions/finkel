@@ -49,7 +49,7 @@
     text-align: center;
   }
 
-  @media screen and (max-width: $med) {
+  @media screen and (max-width: $md) {
     @include box-shadow();
 
     align-items: center;
@@ -175,7 +175,7 @@
     }
   }
 
-  @media screen and (max-width: $med) {
+  @media screen and (max-width: $md) {
     height: 4.5em;
     left: 2em;
     padding: .75em;
