@@ -1034,7 +1034,7 @@ html {
       flex-shrink: 0;
   min-height: calc(100vh - (100px * 2));
   padding: 50px 0;
-  width: calc(100% - 17px);
+  width: 100%;
   -webkit-overflow-scrolling: touch;
   scroll-snap-align: start;
 }

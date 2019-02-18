@@ -93,7 +93,7 @@ html {
     flex-shrink: 0;
     min-height: calc(100vh - (#{$page-border-width} * 2));
     padding: 50px 0;
-    width: calc(100% - #{$scroll-bar-width});
+    width: 100%;
     -webkit-overflow-scrolling: touch; // Mobile Scroll
     scroll-snap-align: start; 
     
