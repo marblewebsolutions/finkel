@@ -85,6 +85,7 @@ html {
   width: calc(100% + #{$scroll-bar-width});
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth; // Smooth scrolling when clicking links
+  scroll-padding-bottom: 100px;
   
   section {
     background: $black;

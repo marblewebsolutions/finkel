@@ -45,6 +45,7 @@
             
             <section id="tour">
                 <div class="section-content">
+                    <h2 class="sub-title">Tour Dates</h2>
                     <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="FINKEL" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#000000" data-link-color="#FF4141" data-background-color="rgba(0,0,0,0)" data-display-limit="5" data-link-text-color="#000000" data-display-lineup="false" data-separator-color="rgba(255, 255, 255, 0.5)"></a>
                 </div>
             </section>
