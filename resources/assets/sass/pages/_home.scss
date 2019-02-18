@@ -1,3 +1,29 @@
+#home {
+    height: calc(100vh - (#{$page-border-width} * 2));
+    
+    .section-content {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .video-container {
+        height: 100%;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        
+        video {
+            height: 100%;
+            max-width: 100%;
+            width: auto;
+        }
+    }
+}
+
+#tour {
+    background: $yellow;
+}
+
 // .home {
 //   .block-preorder {
 //     padding: 5em 0 11em;

@@ -1,9 +1,9 @@
 <footer class="footer">
     <div class="footer-left">
         <nav class="nav-links">
-            <a class="nav-link active" href="#section-1">Home</a>
-            <a class="nav-link" href="#section-2">Live</a>
-            <a class="nav-link" href="#section-3">Contact</a>
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="#tour">Tour</a>
+            <a class="nav-link" href="#contact">Contact</a>
             <a class="nav-link" href="#">Shop</a>
         </nav>
     </div>

@@ -90,17 +90,14 @@ html {
     background: $black;
     display: flex;
     flex-shrink: 0;
-    height: calc(100vh - (#{$page-border-width} * 2));
+    min-height: calc(100vh - (#{$page-border-width} * 2));
     width: 100%;
     -webkit-overflow-scrolling: touch; // Mobile Scroll
     scroll-snap-align: start; 
     
-    &:nth-child(odd) {
-      background: $yellow;
-    }
-    
     .section-content {
       margin: auto;
+      position: relative;
     }
   }
 }
