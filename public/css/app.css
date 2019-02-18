@@ -1832,6 +1832,9 @@ ul {
 
 #shop .product-item {
   text-align: center;
+  -webkit-transition: .2s background ease;
+  transition: .2s background ease;
+  padding: 20px;
 }
 
 #shop .product-item .product-img {
@@ -1856,6 +1859,10 @@ ul {
 
 #shop .product-item .pp-buy-button {
   margin-top: 15px;
+}
+
+#shop .product-item:hover {
+  background: rgba(250, 237, 71, 0.3);
 }
 
 #shop .product-items {

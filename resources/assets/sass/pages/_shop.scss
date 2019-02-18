@@ -1,6 +1,8 @@
 #shop {
     .product-item {
         text-align: center;
+        transition: .2s background ease;
+        padding: 20px;
         
         .product-img {
             height: 250px;
@@ -23,6 +25,10 @@
         
         .pp-buy-button {
             margin-top: 15px;
+        }
+        
+        &:hover {
+            background: rgba($yellow, .3);
         }
     }
     
