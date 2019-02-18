@@ -5,7 +5,7 @@
         <input type="hidden" name="currency_code" value="USD">
         
         <div class="product-img">
-            <img class="display-img" src="../images/products/{{$img}}" alt="{{$product}}">
+            <img class="display-img" src="{{ asset('images/products/'.$img) }}" alt="{{$product}}">
         </div>
         
         <p class="product-name">{{$name}}</p>

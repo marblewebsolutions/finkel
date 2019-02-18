@@ -28,7 +28,7 @@ $('.main').scroll(function(e) {
             activeSection = $section.attr('id');
             
             $('.nav-link').removeClass('active');
-            $('.nav-link[href="#'+activeSection+'"]').addClass('active');
+            $('.nav-link[section="'+activeSection+'"]').addClass('active');
             return true;
         }
     })
