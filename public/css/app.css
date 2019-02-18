@@ -1326,6 +1326,7 @@ ul {
     left: 0;
     opacity: 0;
     padding: 10px 0;
+    pointer-events: none;
     position: absolute;
     text-align: center;
     top: -44px;
@@ -1342,6 +1343,7 @@ ul {
 
   .footer .social.active {
     opacity: 1;
+    pointer-events: auto;
   }
 }
 
