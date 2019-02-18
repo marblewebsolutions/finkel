@@ -943,6 +943,7 @@ html {
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
+  scroll-behavior: smooth;
 }
 
 .back-to-top {
@@ -1022,7 +1023,7 @@ html {
       -ms-scroll-snap-type: y mandatory;
           scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  scroll-padding-bottom: 400px;
+  scroll-padding-bottom: 250px;
 }
 
 .main section {
