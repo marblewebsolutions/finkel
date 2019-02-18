@@ -85,8 +85,6 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 /*global $*/
 /*global isMobileDevice*/
 
-console.log('app js');
-
 // jQuery include
 window.$ = window.jQuery = __webpack_require__(2);
 
@@ -113,6 +111,39 @@ $('.main').scroll(function (e) {
         }
     });
 });
+
+function initializeMailchimp() {
+    var $wrapper = $('.mailchimp-wrapper');
+    var $toggle = $('.mailchimp-toggle');
+
+    $toggle.click(function () {
+        if ($wrapper.hasClass('active')) {
+            // Close Mailchimp Signup Form
+            $toggle.find('p').html('Sign Up for our Newsletter');
+            $wrapper.removeClass('active');
+            $wrapper.slideUp();
+        } else {
+            // Open Mailchimp Signup Form
+            $toggle.find('p').html('Close');
+            $wrapper.addClass('active');
+            $wrapper.slideDown();
+        }
+    });
+}
+
+function initializeFooter() {
+    var $socialExpand = $('.social-expand');
+    var $social = $('.social');
+
+    $socialExpand.click(function (e) {
+        e.preventDefault();
+
+        $social.toggleClass('active');
+    });
+}
+
+initializeMailchimp();
+initializeFooter();
 
 // $.scrollToLoc = function scrollToLoc(hash) {
 //     if (hash[0] != '#') {

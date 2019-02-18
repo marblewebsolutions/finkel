@@ -11,6 +11,26 @@
   width: 100%;
   z-index: $page-cover;
   
+  .footer-right {
+    text-align: right;
+  }
+  
+  .legal {
+    margin-top: 12px;
+    
+    p {
+      display: inline-block;
+      margin-left: 20px;
+      vertical-align: baseline;
+    }
+    
+    .text-link {
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+  
   .nav-link {
     display: inline-block;
     font-size: 1.5rem;
@@ -18,12 +38,109 @@
     transition: .3s color ease;
     vertical-align: middle;
     
+    &.social-expand {
+      display: none;
+    }
+    
     &:hover {
       color: rgba($black, .8);
     }
     
     &.active {
       color: $black;
+    }
+  }
+  
+  .social {
+    &:hover {
+      > * {
+        opacity: .5;
+      }
+    }
+    
+    > * {
+      display: inline-block;
+      margin-left: 8px;
+      transition: .2s opacity ease;
+      vertical-align: middle;
+      
+      &:hover {
+        opacity: 1;
+      }
+    }
+    
+    img {
+      height: 24px;
+      width: auto;
+    }
+  }
+  
+  @media screen and (max-width: $md) {
+    margin: auto;
+    padding: 0 20px;
+    width: 100%;
+    
+    .nav-link {
+      font-size: 1.3rem;
+      margin-right: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: $sm) {
+    display: block;
+    height: 70px;
+    padding: 10px 20px;
+    z-index: 2;
+    
+    p {
+      font-size: 1.2rem;
+    }
+    
+    .footer-right {
+      margin-top: 8px;
+      text-align: left;
+    }
+    
+    .legal {
+      p {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+    }
+    
+    .nav-link {
+      font-size: 1.2rem;
+      margin-right: 1.2rem;
+      
+      &.social-expand {
+        display: inline-block;
+      }
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    
+    .social {
+      background: white;
+      left: 0;
+      opacity: 0;
+      padding: 10px 0;
+      position: absolute;
+      text-align: center;
+      top: -44px;
+      transition: .3s opacity ease;
+      width: 100%;
+      z-index: 1;
+    
+      > * {
+        margin-left: unset;
+        margin: 0 8px;
+      }
+      
+      &.active {
+        opacity: 1;
+      }
     }
   }
 }
@@ -49,23 +166,6 @@
       .orange {
         color: $mws-orange;
       }
-    }
-  }
-}
-
-@media screen and (max-width: $md) {
-  .footer {
-    margin: auto;
-    padding: 0 20px;
-    width: 100%;
-    
-    p {
-      font-size: 1.1rem;
-    }
-    
-    .nav-link {
-      font-size: 1.1rem;
-      margin-right: 1.5rem;
     }
   }
 }

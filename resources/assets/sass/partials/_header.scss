@@ -12,10 +12,10 @@
     .logo {
         margin: auto;
     }
+    
+    @media screen and (max-width: $md) {
+        height: 70px;
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: $md) {
-  .header {
-    width: 100%;
-  }
-}

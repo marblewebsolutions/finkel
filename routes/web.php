@@ -12,9 +12,11 @@
 */
 
 Route::get('/', 'PageController@index');
-Route::get('/digs', 'PageController@digs');
-Route::get('/music-media', 'PageController@musicMedia');
-Route::get('/story', 'PageController@story');
+Route::get('shop', 'PageController@shop');
 
-Route::post('/', 'PageController@setStatic');
-Route::post('/music-media', 'PageController@mail');
+// Route::get('/digs', 'PageController@digs');
+// Route::get('/music-media', 'PageController@musicMedia');
+// Route::get('/story', 'PageController@story');
+
+// Route::post('/', 'PageController@setStatic');
+// Route::post('/music-media', 'PageController@mail');

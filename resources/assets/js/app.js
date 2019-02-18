@@ -7,8 +7,6 @@
 /*global $*/
 /*global isMobileDevice*/
 
-console.log('app js');
-
 // jQuery include
 window.$ = window.jQuery = require('jquery');
 
@@ -35,6 +33,40 @@ $('.main').scroll(function(e) {
         }
     })
 })
+
+function initializeMailchimp() {
+    var $wrapper = $('.mailchimp-wrapper');
+    var $toggle = $('.mailchimp-toggle');
+    
+    $toggle.click(function() {
+        if ($wrapper.hasClass('active')) {
+            // Close Mailchimp Signup Form
+            $toggle.find('p').html('Sign Up for our Newsletter');
+            $wrapper.removeClass('active');
+            $wrapper.slideUp();
+        } else {
+            // Open Mailchimp Signup Form
+            $toggle.find('p').html('Close');
+            $wrapper.addClass('active');
+            $wrapper.slideDown();
+        }
+    });
+}
+
+function initializeFooter() {
+    var $socialExpand = $('.social-expand');
+    var $social = $('.social');
+    
+    $socialExpand.click(function(e) {
+        e.preventDefault();
+        
+        
+        $social.toggleClass('active');
+    });
+}
+
+initializeMailchimp();
+initializeFooter();
 
 // $.scrollToLoc = function scrollToLoc(hash) {
 //     if (hash[0] != '#') {

@@ -46,7 +46,7 @@ html {
   margin: 1em auto;
   padding: .5em;
   text-align: center;
-  transition: all .3s ease;
+  transition: all .2s ease;
   
   p {
     font-weight: bold;
@@ -92,12 +92,14 @@ html {
     display: flex;
     flex-shrink: 0;
     min-height: calc(100vh - (#{$page-border-width} * 2));
-    width: 100%;
+    padding: 50px 0;
+    width: calc(100% - #{$scroll-bar-width});
     -webkit-overflow-scrolling: touch; // Mobile Scroll
     scroll-snap-align: start; 
     
     .section-content {
       margin: auto;
+      max-width: 90%;
       position: relative;
     }
   }
@@ -155,7 +157,14 @@ html {
 
 @media screen and (max-width: $md) {
   .main {
+    height: calc(100vh - 140px);
+    margin: 70px 0;
     width: 100%;
+    
+    section {
+      min-height: calc(100vh - 140px);
+      width: 100%;
+    }
   }
   
   .page-border {

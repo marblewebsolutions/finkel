@@ -29,14 +29,14 @@ $spacing: (
   0: 0,
   xs: .5rem,
   sm: 1rem,
-  med: 2rem,
+  md: 2rem,
   lg: 3rem,
   xl: 4rem
 );
 
 @each $name, $size in $spacing {
   // Margins
-  .m-#{$name} {
+  .ma-#{$name} {
     margin: $size;
   }
   .mx-#{$name} {
@@ -61,7 +61,7 @@ $spacing: (
   }
 
   // Paddings
-  .p-#{$name} {
+  .pa-#{$name} {
     padding: $size;
   }
   .px-#{$name} {

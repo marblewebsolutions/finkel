@@ -1,12 +1,13 @@
 a {
   text-decoration: none;
   @include transition(color);
-
-  &:active,
-  &:focus,
-  &:hover {
-    //cursor: url('/images/diamondcursor_lg.png'), auto;
-    cursor: pointer;
+  
+  &.text-link {
+    color: $text;
+    
+    &:hover {
+      color: $yellow;
+    }
   }
 }
 
@@ -36,6 +37,15 @@ h2 {
 h3 {
   font-size: $font-size-h3;
   font-weight: bold;
+}
+
+hr {
+  border: none;
+  background: rgba($white, .5);
+  height: 1px;
+  margin: 40px 0; 
+  max-width: 100%;
+  width: 500px;
 }
 
 img {
