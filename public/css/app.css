@@ -943,7 +943,6 @@ html {
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  scroll-behavior: smooth;
 }
 
 .back-to-top {
@@ -1019,11 +1018,6 @@ html {
   margin: 100px 0;
   overflow-y: auto;
   width: calc(100% + 17px);
-  -webkit-scroll-snap-type: y mandatory;
-      -ms-scroll-snap-type: y mandatory;
-          scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  scroll-padding-bottom: 250px;
 }
 
 .main section {
@@ -1036,8 +1030,6 @@ html {
   min-height: calc(100vh - (100px * 2));
   padding: 50px 0;
   width: 100%;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-align: start;
 }
 
 .main section .section-content {
@@ -1833,7 +1825,12 @@ ul {
   text-align: center;
 }
 
+#shop {
+  background: #fff;
+}
+
 #shop .product-item {
+  background: #efefef;
   text-align: center;
   -webkit-transition: .2s background ease;
   transition: .2s background ease;
@@ -1862,10 +1859,6 @@ ul {
 
 #shop .product-item .pp-buy-button {
   margin-top: 15px;
-}
-
-#shop .product-item:hover {
-  background: rgba(250, 237, 71, 0.3);
 }
 
 #shop .product-items {

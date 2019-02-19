@@ -4,7 +4,7 @@
             <a class="nav-link {{ ($page_title == 'Home' ? 'active' : '') }}" href="{{ url('/#home') }}" section="home">Home</a>
             <a class="nav-link" href="{{ url('/#tour') }}" section="tour">Tour</a>
             <a class="nav-link" href="{{ url('/#contact') }}" section="contact">Contact</a>
-            <a class="nav-link {{ ($page_title == 'Shop' ? 'active' : '') }}" href="{{ url('shop') }}">Shop</a>
+            <a class="nav-link {{ ($page_title == 'Shop' ? 'active' : '') }}" href="{{ url('shop') }}" section="shop">Shop</a>
             <a class="nav-link social-expand" href="#">Social</a>
         </nav>
     </div>

@@ -1,5 +1,8 @@
 #shop {
+    background: $white;
+    
     .product-item {
+        background: #efefef;
         text-align: center;
         transition: .2s background ease;
         padding: 20px;
@@ -28,7 +31,7 @@
         }
         
         &:hover {
-            background: rgba($yellow, .3);
+            
         }
     }
     

@@ -13,7 +13,6 @@ html {
   font-style: normal;
   font-weight: 600;
   font-size: $font-size-html;
-  scroll-behavior: smooth;
 }
 
 .back-to-top {
@@ -84,9 +83,9 @@ html {
   margin: 100px 0;
   overflow-y: auto;
   width: calc(100% + #{$scroll-bar-width});
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth; // Smooth scrolling when clicking links
-  scroll-padding-bottom: 250px;
+  //scroll-snap-type: y mandatory;
+  //scroll-behavior: smooth; // Smooth scrolling when clicking links
+  //scroll-padding-bottom: 250px;
   
   section {
     background: $black;
@@ -95,8 +94,8 @@ html {
     min-height: calc(100vh - (#{$page-border-width} * 2));
     padding: 50px 0;
     width: 100%;
-    -webkit-overflow-scrolling: touch; // Mobile Scroll
-    scroll-snap-align: start; 
+    //-webkit-overflow-scrolling: touch; // Mobile Scroll
+    //scroll-snap-align: start; 
     
     .section-content {
       margin: auto;
