@@ -15,6 +15,7 @@
         }
         
         .sub-title {
+            font-size: 1.5rem;
             margin-bottom: 0;
             margin-top: 15px;
             text-align: center;
@@ -39,12 +40,6 @@
     
     @media screen and (max-width: $md) {
         height: calc(100vh - 140px);
-        
-        .image-container {
-            .sub-title {
-                font-size: 1.5rem;
-            }
-        }
     }
 }
 
@@ -85,11 +80,16 @@
     }
 }
 
-#contact {
+#connect {
     padding: 50px 0;
     
     .email-link {
         color: $white;
+        line-height: 20px;
+        
+        .text-link {
+            font-size: 18px;
+        }
     }
     
     .mailchimp-toggle {

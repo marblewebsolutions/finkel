@@ -3,7 +3,7 @@
         <nav class="nav-links">
             <a class="nav-link {{ ($page_title == 'Home' ? 'active smooth-scroll' : '') }}" href="{{ url('/#home') }}" section="home">Home</a>
             <a class="nav-link {{ ($page_title == 'Home' ? 'smooth-scroll' : '') }}" href="{{ url('/#tour') }}" section="tour">Tour</a>
-            <a class="nav-link {{ ($page_title == 'Home' ? 'smooth-scroll' : '') }}" href="{{ url('/#contact') }}" section="contact">Contact</a>
+            <a class="nav-link {{ ($page_title == 'Home' ? 'smooth-scroll' : '') }}" href="{{ url('/#connect') }}" section="connect">Connect</a>
             <a class="nav-link {{ ($page_title == 'Shop' ? 'active' : '') }}" href="{{ url('shop') }}" section="shop">Shop</a>
             <a class="nav-link social-expand" href="#">Social</a>
         </nav>

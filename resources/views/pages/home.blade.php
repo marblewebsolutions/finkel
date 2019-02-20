@@ -29,9 +29,9 @@
     </div>
 </section>
 
-<section id="contact">
+<section id="connect">
     <div class="section-content">
-        <h2 class="sub-title">Contact</h2>
+        <h2 class="sub-title">Connect</h2>
         
         <p class="mb-md">To stay up to date with the latest <span class="stretch-word">FINKEL</span> info,<br>sign up for our newsletter</p>
         
