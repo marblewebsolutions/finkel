@@ -84,7 +84,6 @@ html {
   overflow-y: auto;
   width: calc(100% + #{$scroll-bar-width});
   //scroll-snap-type: y mandatory;
-  //scroll-behavior: smooth; // Smooth scrolling when clicking links
   //scroll-padding-bottom: 250px;
   
   section {

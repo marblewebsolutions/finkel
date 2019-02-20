@@ -31,9 +31,9 @@
         <div class="page-border right"></div>
         @include('partials.footer')
         
-        <div class="main">
+        <main class="main">
             @yield('main')
-        </div>
+        </main>
     </div>
 
     <script src="{{ url('js/app.js') }}"></script>

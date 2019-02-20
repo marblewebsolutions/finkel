@@ -12,6 +12,26 @@ window.$ = window.jQuery = require('jquery');
 
 isMobileDevice = (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 
+$('main').scroll(function() {
+    //console.log($('main').position().top - $('#home').offset().top + 100);
+})
+
+$.scrollToLoc = function scrollToLoc(hash) {
+    if (hash[0] != '#') {
+        hash = '#' + hash;
+    }
+    
+    if ($(hash).offset().top != $('header').outerHeight()) {
+        console.log($(hash).offset().top - $($('section')[0]).position().top)
+    
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('main').animate({
+            scrollTop: $(hash).offset().top - $($('section')[0]).position().top
+        }, 800, function(){});
+    }
+}
+
 // Highlight link on scroll
 $('.main').scroll(function(e) {
     var $main = $(this);
@@ -32,7 +52,20 @@ $('.main').scroll(function(e) {
             return true;
         }
     })
-})
+});
+
+function initializeSmoothScrolling() {
+    $(".smooth-scroll").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if ($(this).attr('section') !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+    
+            // Store hash
+            $.scrollToLoc($(this).attr('section'));
+        }
+    });
+}
 
 function initializeMailchimp() {
     var $wrapper = $('.mailchimp-wrapper');
@@ -65,32 +98,11 @@ function initializeFooter() {
     });
 }
 
+initializeSmoothScrolling();
 initializeMailchimp();
 initializeFooter();
 
-// $.scrollToLoc = function scrollToLoc(hash) {
-//     if (hash[0] != '#') {
-//         hash = '#' + hash;
-//     }
-    
-//     // Using jQuery's animate() method to add smooth page scroll
-//     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-//     $('html, body').animate({
-//         scrollTop: $(hash).offset().top
-//     }, 800, function(){});
-// }
 
-// Smooth Scrolling
-// $(".smooth-scroll").on('click', function(event) {
-//     // Make sure this.hash has a value before overriding default behavior
-//     if (this.hash !== "") {
-//         // Prevent default anchor click behavior
-//         event.preventDefault();
-
-//         // Store hash
-//         $.scrollToLoc(this.hash);
-//     }
-// });
 
 // Static functionality
 // var $static = $(".static");
