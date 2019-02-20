@@ -82,7 +82,8 @@ html {
   height: calc(100vh - (#{$page-border-width} * 2));
   margin: 100px 0;
   overflow-y: auto;
-  width: calc(100% + #{$scroll-bar-width});
+  width: 100%;
+  //width: calc(100% + #{$scroll-bar-width});
   //scroll-snap-type: y mandatory;
   //scroll-padding-bottom: 250px;
   

@@ -11,6 +11,10 @@
     
     .logo {
         margin: auto;
+        
+        a {
+            color: $red;
+        }
     }
     
     @media screen and (max-width: $md) {

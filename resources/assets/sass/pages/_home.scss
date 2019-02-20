@@ -1,3 +1,28 @@
+#opener {
+    height: calc(100vh - (#{$page-border-width} * 2));
+    background: $white;
+    min-height: unset;
+    
+    .image-container {
+        display: inline-block;
+        height: 100%;
+        
+        img {
+            height: 100%;
+            object-fit: contain;
+            width: auto;
+        }
+    }
+    
+    .section-content {
+        height: 100%;
+    }
+    
+    @media screen and (max-width: $sm) {
+        height: calc(100vh - 140px);
+    }
+}
+
 #home {
     height: calc(100vh - (#{$page-border-width} * 2));
     padding: 0;

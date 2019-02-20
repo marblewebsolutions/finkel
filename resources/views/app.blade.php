@@ -18,8 +18,8 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--<meta name="description" content="Enter Description Here">-->
-    <meta name="keywords" content="finkel, band">
+    <meta name="description" content="FINKEL is an electronic, soul / pop duo comprised of Jane and Brian Spencer. The project is based in Los Angeles, CA. The duo previously made up the band Less Is More and were based in Kalamazoo, Michigan.">
+    <meta name="keywords" content="Finkel, Band, Music, Video, Design, Animation, Alternative, Pop">
 
     <!-- site css -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">

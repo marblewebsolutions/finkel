@@ -1017,7 +1017,7 @@ html {
   height: calc(100vh - (100px * 2));
   margin: 100px 0;
   overflow-y: auto;
-  width: calc(100% + 17px);
+  width: 100%;
 }
 
 .main section {
@@ -1406,6 +1406,10 @@ ul {
   margin: auto;
 }
 
+.header .logo a {
+  color: #FC3629;
+}
+
 @media screen and (max-width: 900px) {
   .header {
     height: 70px;
@@ -1753,6 +1757,34 @@ ul {
     opacity: 0;
     -webkit-transition: 0.3s opacity ease;
     transition: 0.3s opacity ease;
+  }
+}
+
+#opener {
+  height: calc(100vh - (100px * 2));
+  background: #fff;
+  min-height: unset;
+}
+
+#opener .image-container {
+  display: inline-block;
+  height: 100%;
+}
+
+#opener .image-container img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+}
+
+#opener .section-content {
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #opener {
+    height: calc(100vh - 140px);
   }
 }
 
