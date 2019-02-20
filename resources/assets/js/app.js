@@ -12,18 +12,12 @@ window.$ = window.jQuery = require('jquery');
 
 isMobileDevice = (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 
-$('main').scroll(function() {
-    //console.log($('main').position().top - $('#home').offset().top + 100);
-})
-
 $.scrollToLoc = function scrollToLoc(hash) {
     if (hash[0] != '#') {
         hash = '#' + hash;
     }
     
     if ($(hash).offset().top != $('header').outerHeight()) {
-        console.log($(hash).offset().top - $($('section')[0]).position().top)
-    
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
@@ -46,6 +40,10 @@ function initializeNavScrollHighlighting() {
             
             if ($section.offset().top + $section.outerHeight() - headerHeight - sectionBuffer > $(window).scrollTop()) {
                 activeSection = $section.attr('id');
+                
+                if (activeSection == "opener") {
+                    activeSection = "home";
+                }
                 
                 $('.nav-link').removeClass('active');
                 $('.nav-link[section="'+activeSection+'"]').addClass('active');
