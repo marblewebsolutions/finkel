@@ -23,7 +23,7 @@
         
         <div class="legal">
             <p>&copy; {{ date("Y") }} Finkel</p>
-            <p><a class="text-link" href="#">Privacy Policy</a></p>
+            <p><a class="text-link" target="_blank" href="{{ url('privacy') }}">Cookie & Privacy Policy</a></p>
         </div>
     </div>
     

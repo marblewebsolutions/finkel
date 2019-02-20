@@ -13,6 +13,7 @@
 
 Route::get('/', 'PageController@index');
 Route::get('shop', 'PageController@shop');
+Route::get('privacy', 'PageController@privacy');
 
 // Route::get('/digs', 'PageController@digs');
 // Route::get('/music-media', 'PageController@musicMedia');

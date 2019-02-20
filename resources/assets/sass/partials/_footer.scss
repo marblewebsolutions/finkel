@@ -76,6 +76,7 @@
   }
   
   @media screen and (max-width: $md) {
+    height: 71px;
     margin: auto;
     padding: 0 20px;
     width: 100%;
@@ -88,7 +89,6 @@
   
   @media screen and (max-width: $sm) {
     display: block;
-    height: 71px;
     padding: 10px 20px;
     z-index: 2;
     

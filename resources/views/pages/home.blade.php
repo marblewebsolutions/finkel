@@ -6,6 +6,7 @@
     <div class="section-content">
         <a class="image-container" target="_blank" href="https://ffm.to/csrm442xow/presavecallback?context=pre_save&service=spotify&redirecturl=&actionid=&order=5c634984737390ecca5d2345&user=Less%20Is%20More&status=success&origin=presavecallback">
             <img src="{{ asset('images/Album_Art.jpg') }}" alt="u & I Album Cover">
+            <h2 class="sub-title">Spotify Pre-Save</h2>
         </a>
     </div>
 </section>

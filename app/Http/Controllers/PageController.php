@@ -15,4 +15,8 @@ class PageController extends Controller
     public function shop() {
         return view('pages.shop');
     }
+    
+    public function privacy() {
+        return view('privacy');
+    }
 }
