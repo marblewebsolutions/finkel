@@ -1282,7 +1282,7 @@ ul {
 @media screen and (max-width: 600px) {
   .footer {
     display: block;
-    height: 70px;
+    height: 71px;
     padding: 10px 20px;
     z-index: 2;
   }
@@ -1337,6 +1337,12 @@ ul {
   .footer .social.active {
     opacity: 1;
     pointer-events: auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer .social > * {
+    margin: 0 5px;
   }
 }
 

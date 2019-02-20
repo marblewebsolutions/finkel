@@ -88,7 +88,7 @@
   
   @media screen and (max-width: $sm) {
     display: block;
-    height: 70px;
+    height: 71px;
     padding: 10px 20px;
     z-index: 2;
     
@@ -142,6 +142,14 @@
       &.active {
         opacity: 1;
         pointer-events: auto;
+      }
+    }
+  }
+  
+  @media screen and (max-width: $xs) {
+    .social {
+      > * {
+        margin: 0 5px;
       }
     }
   }
