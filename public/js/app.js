@@ -104,33 +104,34 @@ $.scrollToLoc = function scrollToLoc(hash) {
 
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('main').animate({
-            scrollTop: $(hash).offset().top - $($('section')[0]).position().top
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - $('header').outerHeight()
         }, 800, function () {});
     }
 };
 
-// Highlight link on scroll
-$('.main').scroll(function (e) {
-    var $main = $(this);
+function initializeNavScrollHighlighting() {
     var $sections = $('.main section');
 
     var activeSection = 'section-1';
-    var mainTop = $main.offset().top;
-    var sectionBuffer = 30;
+    var headerHeight = $('header').height();
+    var sectionBuffer = 83; //px
 
-    $sections.each(function () {
-        var $section = $(this);
+    // Highlight link on scroll
+    $(window).scroll(function (e) {
+        for (var i = 0; i < $sections.length; i++) {
+            var $section = $($sections[i]);
 
-        if ($section.offset().top < 100 + sectionBuffer && $section.offset().top > 100 - sectionBuffer) {
-            activeSection = $section.attr('id');
+            if ($section.offset().top + $section.outerHeight() - headerHeight - sectionBuffer > $(window).scrollTop()) {
+                activeSection = $section.attr('id');
 
-            $('.nav-link').removeClass('active');
-            $('.nav-link[section="' + activeSection + '"]').addClass('active');
-            return true;
+                $('.nav-link').removeClass('active');
+                $('.nav-link[section="' + activeSection + '"]').addClass('active');
+                return true;
+            }
         }
     });
-});
+}
 
 function initializeSmoothScrolling() {
     $(".smooth-scroll").on('click', function (event) {
@@ -175,6 +176,7 @@ function initializeFooter() {
     });
 }
 
+initializeNavScrollHighlighting();
 initializeSmoothScrolling();
 initializeMailchimp();
 initializeFooter();
