@@ -1,17 +1,18 @@
 #opener {
     height: calc(100vh - (#{$page-border-width} * 2));
     min-height: unset;
+    padding: 0;
     
     .image-container {
         display: inline-block;
         margin: auto;
-        padding: 20px;
         
         img {
             margin: auto;
+            max-height: 50vh;
             max-width: 350px;
             transition: .2s box-shadow ease;
-            width: 100%;
+            width: auto;
         }
         
         .sub-title {
@@ -40,6 +41,13 @@
     
     @media screen and (max-width: $md) {
         height: calc(100vh - 140px);
+        
+        .image-container {
+            img {
+                max-width: 100%;
+                width: 350px;
+            }
+        }
     }
 }
 

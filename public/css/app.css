@@ -1787,20 +1787,21 @@ ul {
 #opener {
   height: calc(100vh - (100px * 2));
   min-height: unset;
+  padding: 0;
 }
 
 #opener .image-container {
   display: inline-block;
   margin: auto;
-  padding: 20px;
 }
 
 #opener .image-container img {
   margin: auto;
+  max-height: 50vh;
   max-width: 350px;
   -webkit-transition: .2s box-shadow ease;
   transition: .2s box-shadow ease;
-  width: 100%;
+  width: auto;
 }
 
 #opener .image-container .sub-title {
@@ -1831,6 +1832,11 @@ ul {
 @media screen and (max-width: 900px) {
   #opener {
     height: calc(100vh - 140px);
+  }
+
+  #opener .image-container img {
+    max-width: 100%;
+    width: 350px;
   }
 }
 
