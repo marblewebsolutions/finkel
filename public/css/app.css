@@ -1441,6 +1441,34 @@ ul {
   }
 }
 
+.loading-screen {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  -webkit-transition: 1s opacity ease;
+  transition: 1s opacity ease;
+  width: 100vw;
+  z-index: 10000;
+}
+
+.loading-screen.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.loading-screen img {
+  margin: auto;
+  max-width: 90%;
+  width: 500px;
+}
+
 .modal-container {
   background: rgba(0, 0, 0, 0.6);
   display: -webkit-box;

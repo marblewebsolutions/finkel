@@ -26,6 +26,14 @@
 </head>
 <body>
     <div class="view">
+        <div class="loading-screen show">
+            <img src="{{ asset('images/Finkel_Warp.gif') }}" alt="Loading...">
+            
+            <noscript>
+                <p>For full functionality of this page, it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com" target="_blank">instructions how to enable JavaScript in your web browser</a></p>
+            </noscript>
+        </div>
+        
         @include('partials.header')
         <div class="page-border left"></div>
         <div class="page-border right"></div>

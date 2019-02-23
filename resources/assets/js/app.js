@@ -26,6 +26,20 @@ $.scrollToLoc = function scrollToLoc(hash) {
     }
 }
 
+function initializeLoadingScreen() {
+    var $loadingScreen = $('.loading-screen');
+    
+    // Show page after window loads
+    $(window).on('load', function() {
+      $loadingScreen.removeClass('show');
+    });
+    
+    // Or wait for timer to run out
+    setTimeout(function() {
+        $loadingScreen.removeClass('show');
+    }, 8000);
+}
+
 function initializeNavScrollHighlighting() {
     var $sections = $('.main section');
     
@@ -97,6 +111,7 @@ function initializeFooter() {
     });
 }
 
+initializeLoadingScreen();
 initializeNavScrollHighlighting();
 initializeSmoothScrolling();
 initializeMailchimp();

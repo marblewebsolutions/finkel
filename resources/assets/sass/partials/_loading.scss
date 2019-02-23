@@ -1,0 +1,24 @@
+.loading-screen {
+    background: $white;
+    display: flex;
+    left: 0;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    transition: 1s opacity ease;
+    width: 100vw;
+    z-index: $loading-z;
+    
+    &.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    img {
+        margin: auto;
+        max-width: 90%;
+        width: 500px;
+    }
+}
