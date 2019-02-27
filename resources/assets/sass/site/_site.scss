@@ -114,7 +114,7 @@ html {
 }
 
 .page-border {
-  background: $white;
+  background: $base-light;
   height: calc(100vh - (#{$page-border-width} * 2));
   position: fixed;
   top: $page-border-width;
