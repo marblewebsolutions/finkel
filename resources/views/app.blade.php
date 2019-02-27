@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-135116374-1');
+    </script>
+
     <title>F I N K E L {{ ($page_title != 'Home' ? '| '.$page_title : '') }}</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
