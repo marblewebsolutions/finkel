@@ -43,11 +43,11 @@
     }
     
     &:hover {
-      color: rgba($black, .8);
+      color: rgba($red, .8);
     }
     
     &.active {
-      color: $black;
+      color: $red;
     }
   }
   

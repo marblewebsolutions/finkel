@@ -1262,11 +1262,11 @@ ul {
 }
 
 .footer .nav-link:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(252, 54, 41, 0.8);
 }
 
 .footer .nav-link.active {
-  color: #000;
+  color: #FC3629;
 }
 
 .footer .social:hover > * {
