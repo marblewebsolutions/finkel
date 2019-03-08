@@ -12,6 +12,9 @@ window.$ = window.jQuery = require('jquery');
 
 isMobileDevice = (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 
+// Mobile device hover effect
+$('body').bind('touchstart', function() {});
+
 $.scrollToLoc = function scrollToLoc(hash) {
     if (hash[0] != '#') {
         hash = '#' + hash;

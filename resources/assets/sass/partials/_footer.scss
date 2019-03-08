@@ -87,31 +87,35 @@
     }
   }
   
+  @media screen and (max-width: 700px) {
+    p {
+      font-size: 1.2rem;
+    }
+    
+    .nav-link {
+      font-size: 1.2rem;
+      margin-right: 1.2rem;
+    }
+  }
+  
   @media screen and (max-width: $sm) {
     display: block;
     padding: 10px 20px;
     z-index: 2;
     
-    p {
-      font-size: 1.2rem;
-    }
-    
     .footer-right {
-      margin-top: 8px;
+      margin-top: 0;
       text-align: left;
     }
     
     .legal {
       p {
         margin-left: 0;
-        margin-right: 20px;
+        margin-right: 12px;
       }
     }
     
     .nav-link {
-      font-size: 1.2rem;
-      margin-right: 1.2rem;
-      
       &.social-expand {
         display: inline-block;
       }
@@ -122,7 +126,7 @@
     }
     
     .social {
-      background: white;
+      background: $base-light;
       left: 0;
       opacity: 0;
       padding: 10px 0;
@@ -147,6 +151,17 @@
   }
   
   @media screen and (max-width: $xs) {
+    padding: 5px 20px;
+    
+    .legal {
+      margin-top: 3px;
+    }
+    
+    .nav-link {
+      margin-bottom: 1px;
+      margin-top: 1px;
+    }
+    
     .social {
       > * {
         margin: 0 5px;

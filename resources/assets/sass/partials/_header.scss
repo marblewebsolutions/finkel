@@ -10,10 +10,16 @@
     z-index: $page-cover;
     
     .logo {
+        height: 100%;
         margin: auto;
         
         a {
             color: $red;
+        }
+        
+        img {
+            height: 100%;
+            width: auto;
         }
     }
     

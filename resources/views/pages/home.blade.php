@@ -4,9 +4,9 @@
 @section('main')
 <section id="opener">
     <div class="section-content">
-        <a class="image-container" target="_blank" href="https://ffm.to/csrm442xow/presavecallback?context=pre_save&service=spotify&redirecturl=&actionid=&order=5c634984737390ecca5d2345&user=Less%20Is%20More&status=success&origin=presavecallback">
+        <a class="image-container" target="_blank" href="https://open.spotify.com/track/6ZdIvuXIkyC5kRX3BG500i?si=U43N93foQ4Ccv-Ii6q_jUw">
             <img src="{{ asset('images/Album_Art.jpg') }}" alt="u & I Album Cover">
-            <h2 class="sub-title">Spotify Pre-Save</h2>
+            <h2 class="sub-title">Stream Now</h2>
         </a>
     </div>
 </section>
@@ -46,6 +46,12 @@
         <p class="email-link mb-md">Management:<br><a class="text-link" href="mailto:Brian@plustalent.net">Brian@plustalent.net</a></p>
         
         <p class="email-link">Label:<br><a class="text-link" href="mailto:Justin@blossomrecs.com">Justin@blossomrecs.com</a></p>
+    </div>
+</section>
+
+<section id="bio">
+    <div class="section-content">
+        <img src="{{ asset('images/finkel-story.jpg') }}" alt="Finkel Bio">
     </div>
 </section>
 @stop
