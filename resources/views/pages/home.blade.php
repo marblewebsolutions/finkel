@@ -5,8 +5,18 @@
 <section id="opener">
     <div class="section-content">
         <a class="image-container" target="_blank" href="https://open.spotify.com/track/6ZdIvuXIkyC5kRX3BG500i?si=U43N93foQ4Ccv-Ii6q_jUw">
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe width="717" height="538" src="https://www.youtube.com/embed/GtqAH8u2q_c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+                
+            <h2 class="sub-title">Watch</h2>
+        </a>
+        
+        <a class="image-container" target="_blank" href="https://open.spotify.com/track/6ZdIvuXIkyC5kRX3BG500i?si=U43N93foQ4Ccv-Ii6q_jUw">
             <img src="{{ asset('images/Album_Art.jpg') }}" alt="u & I Album Cover">
-            <h2 class="sub-title">Stream Now</h2>
+            <h2 class="sub-title">Listen</h2>
         </a>
     </div>
 </section>

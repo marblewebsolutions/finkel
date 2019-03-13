@@ -1,16 +1,16 @@
 #opener {
-    height: calc(100vh - (#{$page-border-width} * 2));
-    min-height: unset;
+    min-height: calc(100vh - (#{$page-border-width} * 2));
     padding: 0;
     
     .image-container {
         display: inline-block;
-        margin: auto;
+        margin: auto 0;
+        width: 47.5%;
         
         img {
             margin: auto;
             max-height: 50vh;
-            max-width: 350px;
+            max-width: 100%;
             transition: .2s box-shadow ease;
             width: auto;
         }
@@ -35,18 +35,21 @@
     }
     
     .section-content {
+        align-items: center;
         display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
         height: 100%;
+        width: 100%;
     }
     
     @media screen and (max-width: $md) {
-        height: calc(100vh - 140px);
+        min-height: calc(100vh - 140px);
+        padding: 30px 0;
         
         .image-container {
-            img {
-                max-width: 100%;
-                width: 350px;
-            }
+            margin: 30px 0;
+            width: 100%;
         }
     }
 }
@@ -129,7 +132,8 @@
 
 #bio {
     .section-content {
-        max-width: 800px;
+        max-width: 90%;
+        width: 800px;
     }
 }
 

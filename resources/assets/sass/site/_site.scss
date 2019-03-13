@@ -76,7 +76,7 @@ html {
 
 
 .main {
-  background: $blue;
+  background: $black;
   display: flex;
   flex-flow: row wrap;
   //height: calc(100vh - (#{$page-border-width} * 2));
@@ -148,6 +148,25 @@ html {
 
 .text-right {
   text-align: right;
+}
+
+.video-container {
+  max-width: 100%;
+}
+
+.video-wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 
 .view {
