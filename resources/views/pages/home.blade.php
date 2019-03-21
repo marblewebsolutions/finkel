@@ -14,8 +14,8 @@
             <h2 class="sub-title">Watch</h2>
         </a>
         
-        <a class="image-container" target="_blank" href="https://open.spotify.com/track/6ZdIvuXIkyC5kRX3BG500i?si=U43N93foQ4Ccv-Ii6q_jUw">
-            <img src="{{ asset('images/Album_Art.jpg') }}" alt="u & I Album Cover">
+        <a class="image-container" target="_blank" href="https://ffm.to/1fcguocr5w">
+            <img src="{{ asset('images/Feel_Alright_Single_Cover.jpg') }}" alt="Feel Alright Single Cover">
             <h2 class="sub-title">Listen</h2>
         </a>
     </div>
