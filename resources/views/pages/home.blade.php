@@ -16,7 +16,7 @@
         
         <a class="image-container" target="_blank" href="https://ffm.to/1fcguocr5w">
             <img src="{{ asset('images/Feel_Alright_Single_Cover.jpg') }}" alt="Feel Alright Single Cover">
-            <h2 class="sub-title">Pre-Save</h2>
+            <h2 class="sub-title">Listen</h2>
         </a>
     </div>
 </section>

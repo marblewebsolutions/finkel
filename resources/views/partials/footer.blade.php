@@ -12,6 +12,7 @@
     
     <div class="footer-right">
         <div class="social">
+            <a target="_blank" href="https://finkelband.bandcamp.com/"><img src="{{asset('images/social/bandcamp-button-square-black-32.png')}}" alt="Bandcamp"></a>
             <a target="_blank" href="https://open.spotify.com/artist/4LLNGLNjMcaomz222tTNph?si=NZfpZc4hTl2ej9CslAwWYg"><img src="{{asset('images/spotify_black.png')}}" alt="Spotify"></a>
             <a target="_blank" href="https://itunes.apple.com/us/album/l-e-x-i-c-o-n-single/1438072631"><img src="{{asset('images/social/Apple_Music_Icon_blk.svg')}}" alt="Apple Music"></a>
             <a target="_blank" href="https://tidal.com/browse/artist/9867912"><img src="{{asset('images/social/tidal.png')}}" alt="TIDAL"></a>

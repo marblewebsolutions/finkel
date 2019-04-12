@@ -1334,9 +1334,15 @@ ul {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .footer {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     padding: 10px 20px;
     z-index: 2;
   }
@@ -1361,13 +1367,13 @@ ul {
 
   .footer .social {
     background: #FFF9F3;
+    bottom: 70px;
     left: 0;
     opacity: 0;
     padding: 10px 0;
     pointer-events: none;
     position: absolute;
     text-align: center;
-    top: -44px;
     -webkit-transition: .3s opacity ease;
     transition: .3s opacity ease;
     width: 100%;
@@ -1387,7 +1393,7 @@ ul {
 
 @media screen and (max-width: 420px) {
   .footer {
-    padding: 5px 20px;
+    padding: 10px 8px;
   }
 
   .footer .legal {
@@ -1400,7 +1406,7 @@ ul {
   }
 
   .footer .social > * {
-    margin: 0 5px;
+    margin: 5px 16px;
   }
 }
 
@@ -1426,7 +1432,7 @@ ul {
   color: #ffd298;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .mws-credit {
     padding-top: .5em;
     position: static;
@@ -2057,7 +2063,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   #shop .product-items {
     grid-template-columns: repeat(1, 1fr);
   }
