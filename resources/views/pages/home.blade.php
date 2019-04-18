@@ -7,7 +7,7 @@
         <a class="image-container" target="_blank" href="https://open.spotify.com/track/6ZdIvuXIkyC5kRX3BG500i?si=U43N93foQ4Ccv-Ii6q_jUw">
             <div class="video-container">
                 <div class="video-wrapper">
-                    <iframe width="717" height="538" src="https://www.youtube.com/embed/GtqAH8u2q_c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="1107" height="622" src="https://www.youtube.com/embed/9LW0qr1dqLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
                 
