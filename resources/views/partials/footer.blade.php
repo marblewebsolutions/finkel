@@ -17,7 +17,7 @@
             <a target="_blank" href="https://itunes.apple.com/us/album/l-e-x-i-c-o-n-single/1438072631"><img src="{{asset('images/social/Apple_Music_Icon_blk.svg')}}" alt="Apple Music"></a>
             <a target="_blank" href="https://tidal.com/browse/artist/9867912"><img src="{{asset('images/social/tidal.png')}}" alt="TIDAL"></a>
             <a target="_blank" href="https://www.youtube.com/channel/UC1i3es2uL002PbLxXV0KzpQ?view_as=subscriber"><img src="{{asset('images/youtube_black.png')}}" alt="YouTube"></a>
-            <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fuser-657791&color=black_white&size=24" height="24px" width="24px"></iframe>
+            <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Ffinkelband&color=black_white&size=24" height="24px" width="24px"></iframe>
             <a target="_blank" href="http://twitter.com/finkelband"><img src="{{ asset('images/twitter_black.png') }}" alt="Twitter"></a>
             <a target="_blank" href="http://instagram.com/finkel_band"><img src="{{asset('images/instagram_black.png')}}" alt="Instagram"></a>
             <a target="_blank" href="http://facebook.com/finkelband"><img src="{{asset('images/facebook_black.png')}}" alt="Facebook"></a>
