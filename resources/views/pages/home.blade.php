@@ -14,9 +14,9 @@
             <h2 class="sub-title">Watch</h2>
         </a>
         
-        <a class="image-container" target="_blank" href="https://ffm.to/1fcguocr5w">
-            <img src="{{ asset('images/Feel_Alright_Single_Cover.jpg') }}" alt="Feel Alright Single Cover">
-            <h2 class="sub-title">Listen</h2>
+        <a class="image-container" target="_blank" href="https://ffm.to/yju5wo5hsl?fbclid=IwAR0DTeXLMcH47h_w9n-b3OqBJ9jCXcMtlR_-1BJQJ6bDKJ--qavePfOWJwY">
+            <img src="{{ asset('images/KOD_final.png') }}" alt="KOD Cover">
+            <h2 class="sub-title">Pre-Save</h2>
         </a>
     </div>
 </section>
