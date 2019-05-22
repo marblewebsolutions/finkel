@@ -90,7 +90,7 @@ function initializeMailchimp() {
     $toggle.click(function() {
         if ($wrapper.hasClass('active')) {
             // Close Mailchimp Signup Form
-            $toggle.find('p').html('Sign Up for our Newsletter');
+            $toggle.find('p').html('JOIN THE FINKEL FAM');
             $wrapper.removeClass('active');
             $wrapper.slideUp();
         } else {

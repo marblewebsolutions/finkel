@@ -43,13 +43,13 @@
     <div class="section-content">
         <h2 class="sub-title">Connect</h2>
         
-        <p class="mb-md">To stay up to date with the latest <span class="stretch-word">FINKEL</span> info,<br>sign up for our newsletter</p>
+        <p class="mb-md">Receive exclusive giveaways, behind the scenes views, news, and tour dates!</p>
         
         <div class="mailchimp-wrapper">
             @include('partials.mailchimp')
         </div>
         
-        <div class="btn mailchimp-toggle"><p>Sign Up for our Newsletter</p></div>
+        <div class="btn mailchimp-toggle"><p>JOIN THE FINKEL FAM</p></div>
         
         <hr>
         
