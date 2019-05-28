@@ -1229,6 +1229,10 @@ ul {
   margin-bottom: 20px;
 }
 
+.letter-spacing {
+  letter-spacing: 3px;
+}
+
 .footer {
   -webkit-box-align: center;
       -ms-flex-align: center;

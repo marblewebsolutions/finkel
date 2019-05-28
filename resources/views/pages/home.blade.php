@@ -14,9 +14,9 @@
             <h2 class="sub-title">Watch</h2>
         </a>
         
-        <a class="image-container" target="_blank" href="https://ffm.to/yju5wo5hsl?fbclid=IwAR0DTeXLMcH47h_w9n-b3OqBJ9jCXcMtlR_-1BJQJ6bDKJ--qavePfOWJwY">
-            <img src="{{ asset('images/KOD_final.png') }}" alt="KOD Cover">
-            <h2 class="sub-title">Pre-Save</h2>
+        <a class="image-container" target="_blank" href="https://open.spotify.com/track/0V7vcSCPXRsY314vY8je7u?si=N5DYAvV4QymTmbzMA1hO7A">
+            <img src="{{ asset('images/KOD_final.png') }}" alt="FINKEL - KOD Cover">
+            <h2 class="sub-title">Listen</h2>
         </a>
     </div>
 </section>
@@ -43,7 +43,7 @@
     <div class="section-content">
         <h2 class="sub-title">Connect</h2>
         
-        <p class="mb-md">Receive exclusive giveaways, behind the scenes views, news, and tour dates!</p>
+        <p class="mb-md">Receive exclusive <span class="letter-spacing">FINKEL</span> giveaways, behind the scenes views, news, and tour dates!</p>
         
         <div class="mailchimp-wrapper">
             @include('partials.mailchimp')
