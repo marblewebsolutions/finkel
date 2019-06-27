@@ -4,10 +4,10 @@
 @section('main')
 <section id="opener">
     <div class="section-content">
-        <a class="image-container" target="_blank" href="https://open.spotify.com/track/6ZdIvuXIkyC5kRX3BG500i?si=U43N93foQ4Ccv-Ii6q_jUw">
+        <a class="image-container" target="_blank" href="https://www.youtube.com/watch?v=XRRD351n-og">
             <div class="video-container">
                 <div class="video-wrapper">
-                    <iframe width="1107" height="622" src="https://www.youtube.com/embed/9LW0qr1dqLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="717" height="538" src="https://www.youtube.com/embed/XRRD351n-og" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
                 
