@@ -4,14 +4,14 @@
 @section('main')
 <section id="opener">
     <div class="section-content">
-        <a class="image-container" target="_blank" href="https://www.youtube.com/watch?v=XRRD351n-og">
-            <div class="video-container">
+        <a class="image-container" target="_blank" href="https://www.kickstarter.com/projects/finkel/finkel-backpack-of-snacks-debut-ep">
+            <div class="video-container no-click">
                 <div class="video-wrapper">
-                    <iframe width="717" height="538" src="https://www.youtube.com/embed/XRRD351n-og" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="956" height="538" src="https://www.youtube.com/embed/ge01jOnoSLg?autoplay=1&loop=1&playlist=ge01jOnoSLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
                 
-            <h2 class="sub-title">Watch</h2>
+            <h2 class="sub-title">Get Involved</h2>
         </a>
         
         <a class="image-container" target="_blank" href="https://open.spotify.com/track/0V7vcSCPXRsY314vY8je7u?si=N5DYAvV4QymTmbzMA1hO7A">

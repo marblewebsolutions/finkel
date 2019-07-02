@@ -109,6 +109,10 @@ html {
   transition: 1s all ease;
 }
 
+.no-click {
+  pointer-events: none;
+}
+
 .no-scroll {
   overflow: hidden;
 }
