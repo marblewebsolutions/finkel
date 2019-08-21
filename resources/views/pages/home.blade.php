@@ -4,20 +4,30 @@
 @section('main')
 <section id="opener">
     <div class="section-content">
-        <a class="image-container" target="_blank" href="https://www.kickstarter.com/projects/finkel/finkel-backpack-of-snacks-debut-ep">
-            <div class="video-container no-click">
+        <a class="image-container" target="_blank" href="https://open.spotify.com/album/6PFpM6r45lWuCCi8P5DXqh?si=fNPF7Q69RoSDJD3nUIN_NQ">
+            <div class="video-container">
                 <div class="video-wrapper">
-                    <iframe width="956" height="538" src="https://www.youtube.com/embed/ge01jOnoSLg?autoplay=1&loop=1&playlist=ge01jOnoSLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="956" height="538" src="https://www.youtube.com/embed/LBLJtXlaKnY?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
                 
-            <h2 class="sub-title">Get Involved</h2>
-        </a>
-        
-        <a class="image-container" target="_blank" href="https://open.spotify.com/track/0V7vcSCPXRsY314vY8je7u?si=N5DYAvV4QymTmbzMA1hO7A">
-            <img src="{{ asset('images/KOD_final.png') }}" alt="FINKEL - KOD Cover">
             <h2 class="sub-title">Listen</h2>
         </a>
+        
+        <a class="image-container" target="_blank" href="https://open.spotify.com/album/2HWi7w2Q0udy3sMTAzNeyt?si=JFtOuzIIQD26cxZYlcHC5w">
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe width="1045" height="435" src="https://www.youtube.com/embed/hMUjcdBmuRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+                
+            <h2 class="sub-title">Listen</h2>
+        </a>
+        
+        <!--<a class="image-container" target="_blank" href="https://open.spotify.com/track/0V7vcSCPXRsY314vY8je7u?si=N5DYAvV4QymTmbzMA1hO7A">-->
+        <!--    <img src="{{ asset('images/KOD_final.png') }}" alt="FINKEL - KOD Cover">-->
+        <!--    <h2 class="sub-title">Listen</h2>-->
+        <!--</a>-->
     </div>
 </section>
 
