@@ -175,7 +175,7 @@ html {
 
 .view {
   margin: auto;
-  width: calc(100vw - (#{$page-border-width} * 2));
+  width: calc(100% - (#{$page-border-width} * 2));
 }
 
 @media screen and (max-width: $md) {

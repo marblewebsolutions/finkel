@@ -13,6 +13,7 @@
 
 Route::get('/', 'PageController@index');
 Route::get('shop', 'PageController@shop');
+Route::get('link2fink', 'PageController@linkinbio');
 Route::get('privacy', 'PageController@privacy');
 
 // Route::get('/digs', 'PageController@digs');

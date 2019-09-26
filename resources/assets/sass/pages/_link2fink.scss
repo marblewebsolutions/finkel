@@ -1,0 +1,15 @@
+.view-link2fink {
+    @media screen and (max-width: $md) {
+        .footer {
+            display: none;
+        }
+    }
+}
+
+#link2fink-grid {
+    padding: 0;
+    
+    .section-content {
+        max-width: 100%;
+    }
+}

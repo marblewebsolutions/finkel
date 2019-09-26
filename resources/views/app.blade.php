@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    <div class="view">
+    <div class="view {{ (isset($page_class) ? $page_class : '') }}">
         <div class="loading-screen show">
             <img src="{{ asset('images/Finkel_Warp.gif') }}" alt="Loading...">
             
