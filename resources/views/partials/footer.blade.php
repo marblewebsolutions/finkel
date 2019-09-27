@@ -14,7 +14,7 @@
         <div class="social">
             <a target="_blank" href="https://finkelband.bandcamp.com/"><img src="{{asset('images/social/bandcamp-button-square-black-32.png')}}" alt="Bandcamp"></a>
             <a target="_blank" href="https://open.spotify.com/artist/4LLNGLNjMcaomz222tTNph?si=NZfpZc4hTl2ej9CslAwWYg"><img src="{{asset('images/spotify_black.png')}}" alt="Spotify"></a>
-            <a target="_blank" href="https://itunes.apple.com/us/album/l-e-x-i-c-o-n-single/1438072631"><img src="{{asset('images/social/Apple_Music_Icon_blk.svg')}}" alt="Apple Music"></a>
+            <a target="_blank" href="https://music.apple.com/us/artist/finkel/252213464"><img src="{{asset('images/social/Apple_Music_Icon_blk.svg')}}" alt="Apple Music"></a>
             <a target="_blank" href="https://tidal.com/browse/artist/9867912"><img src="{{asset('images/social/tidal.png')}}" alt="TIDAL"></a>
             <a target="_blank" href="https://www.youtube.com/channel/UC1i3es2uL002PbLxXV0KzpQ?view_as=subscriber"><img src="{{asset('images/youtube_black.png')}}" alt="YouTube"></a>
             <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Ffinkelband&color=black_white&size=24" height="24px" width="24px"></iframe>
