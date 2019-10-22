@@ -44,7 +44,8 @@ class PageController extends Controller
             ['https://open.spotify.com/track/248aYLqHTOv7jHtI3TNYaN?si=_cZ5ClyjT-qqq4iLXy0GPg', 'need.jpg'],
             ['https://www.youtube.com/watch?v=a6GrLNP69DE', 'Screen Shot 2019-09-25 at 5.49.55 PM.png'],
             ['https://open.spotify.com/track/1CohVM0QKeUItDaaGgXlsr?si=zO5NV_AAR_CXHppa3049ng', 'Screen Shot 2019-09-25 at 5.50.57 PM.png'],
-            ['https://www.youtube.com/watch?v=a6GrLNP69DE', 'ins_FINKEL_w_o_07.jpg']
+            ['https://www.youtube.com/watch?v=a6GrLNP69DE', 'ins_FINKEL_w_o_07.jpg'],
+            ['https://www.youtube.com/watch?v=2jQRwag3rlM', 'Screen Shot 2019-10-21 at 4.54.22 PM.png']
         ];
         
         return view('pages.linkinbio', compact('photos'));
