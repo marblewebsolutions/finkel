@@ -47,6 +47,7 @@ class PageController extends Controller
             ['https://www.youtube.com/watch?v=a6GrLNP69DE', 'ins_FINKEL_w_o_07.jpg'],
             ['https://www.youtube.com/watch?v=2jQRwag3rlM', 'Screen Shot 2019-10-21 at 4.54.22 PM.png']
         ];
+        $photos = array_reverse($photos);
         
         return view('pages.linkinbio', compact('photos'));
     }
